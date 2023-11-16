@@ -1,0 +1,25 @@
+.section-hero {
+  background-color: $gray;
+  padding: 2rem 0 4rem 0;
+
+  &__list {
+    font-weight: 600;
+    color: $brown;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+    }
+  }
+}
+
+.img-box {
+  &__img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,38 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 0 2rem 0;
+
+  &__brand:link,
+  &__brand:visited {
+    font-size: 2rem;
+    font-weight: 700;
+    color: $dark-black;
+    text-decoration: none;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    color: $dark-black;
+    text-decoration: none;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid transparent;
+  }
+
+  &__link:hover,
+  &__link:active {
+    border-bottom: 2px solid currentColor;
+  }
+
+  &__cta {
+    display: flex;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,35 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+.heading {
+  font-weight: 700;
+
+  &--primary {
+    font-size: 5.2rem;
+    color: $medium-black;
+  }
+}
+
+.paragraph {
+  line-height: 1.4;
+
+  &--light {
+    color: $white;
+    font-weight: 600;
+
+    & span {
+      text-decoration: underline;
+    }
+  }
+
+  &--dark {
+    color: $brown;
+  }
+}

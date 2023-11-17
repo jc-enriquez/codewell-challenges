@@ -126,5 +126,23 @@ body {
       align-items: center;
       gap: 1.2rem; }
 
+.section-partners {
+  padding: 4rem 0; }
+  .section-partners__images {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 2.4rem; }
+  .section-partners__img {
+    width: 100%;
+    height: auto; }
+
+.section-secure__container {
+  padding: 4rem 4rem 0 8rem;
+  background-color: #f0eeeb;
+  border-radius: 8px; }
+
+.section-editor {
+  padding: 6rem 0; }
+
 .img-box__img {
   width: 100%; }

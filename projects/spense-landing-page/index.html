@@ -52,17 +52,17 @@
     <main>
       <section class="section-hero">
         <div class="u-container">
-          <div class="grid grid-2-cols">
-            <div class="text-box">
-              <h1 class="heading heading--primary u-margin-bottom-small">
+          <div class="section-hero__container">
+            <div class="text-box text-box--hero">
+              <h1 class="heading heading--primary u-margin-bottom-sm">
                 Share your unfiltered thoughts. Get paid.
               </h1>
-              <p class="paragraph paragraph--dark u-margin-bottom-small">
+              <p class="paragraph paragraph--dark u-margin-bottom-sm">
                 Spense is an open platform for individuals to share their
                 unfiltered thoughts. Discuss the topics you love, and get paid
                 for doing <em>just</em> that.
               </p>
-              <ul class="section-hero__list u-margin-bottom-medium">
+              <ul class="section-hero__list u-margin-bottom-lg">
                 <li class="section-hero__list-item">
                   <img
                     src="assets/images/checkmark-icon.svg"
@@ -85,15 +85,19 @@
                   <span> Withdraw your earnings anytime. </span>
                 </li>
               </ul>
-              <form action="#" class="section-hero__form">
-                <input type="email" placeholder="john@example.com" />
+              <form action="#" class="form">
+                <input
+                  type="email"
+                  placeholder="john@example.com"
+                  class="form__input"
+                />
                 <button class="btn btn--solid">Get Started</button>
               </form>
             </div>
-            <div class="img-box">
+            <div class="img-box img-box--hero">
               <img
                 src="assets/images/hero-image-desktop.png"
-                alt=""
+                alt="Woman using laptop"
                 class="img-box__img"
               />
             </div>
@@ -149,17 +153,19 @@
 
       <section class="section-secure">
         <div class="u-container">
-          <div class="section-secure__container grid grid-2-cols">
+          <div class="section-secure__container">
             <div class="text-box">
-              <h2 class="heading heading--secondary">
+              <h2 class="heading heading--secondary u-margin-bottom-xs">
                 Secure your money with Escrow.
               </h2>
-              <p class="paragraph paragraph--dark">
+              <p class="paragraph paragraph--dark u-margin-bottom-sm">
                 Spense uses Escrow to secure all payments. We believe Escrow
                 offers the highest level of security for your payments, so you
                 never need to worry about scams.
               </p>
-              <a href="#" class="cta--underline">Lear more about Escrow</a>
+              <a href="#" class="cta--underline"
+                >Learn more about Escrow &rarr;</a
+              >
             </div>
             <div class="img-box">
               <img
@@ -174,28 +180,96 @@
 
       <section class="section-editor">
         <div class="u-container">
-          <div class="grid grid-2-cols">
-            <div class="img-box">
+          <div class="section-editor__container">
+            <div class="img-box img-box--editor">
               <img
                 src="assets/images/text-editor.png"
                 alt="Text editor"
                 class="img-box__img"
               />
             </div>
-            <div class="text-box">
-              <h2 class="heading heading--secondary">
+            <div class="text-box text-box--editor">
+              <h2 class="heading heading--secondary u-margin-bottom-xs">
                 A text editor like no other.
               </h2>
-              <p class="paragraph paragraph--dark">
+              <p class="paragraph paragraph--dark u-margin-bottom-sm">
                 Our text editor pulls you into focus mode with it's simplistic
                 design and usability so you can put out your best writings.
               </p>
-              <a href="#" class="cta--underline">Text editor Live Demo</a>
+              <a href="#" class="cta--underline"
+                >Text Editor Live Demo &rarr;</a
+              >
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="u-container">
+        <div class="footer__container">
+          <!-- First -->
+          <div class="footer__brand-box">
+            <a href="index.html" class="footer__brand">spense.</a>
+            <p class="paragraph paragraph--light">
+              Spense is an open platform for individuals to share their
+              unfiltered thoughts. Discuss the topics you love, and get paid for
+              doing <em>just</em> that.
+            </p>
+          </div>
+          <!-- Second -->
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item footer__nav-item--header">Sitemap</li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Homepage</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item footer__nav-item--header">
+                Resources
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Support</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Contact</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">FAQ</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item footer__nav-item--header">Company</li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">About</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Customers</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Blog</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item footer__nav-item--header">
+                Opportunities
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Jobs</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

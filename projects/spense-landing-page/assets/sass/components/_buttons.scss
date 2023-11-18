@@ -7,22 +7,45 @@
     transition: all 0.3s;
   }
 
-  &--transparent:link,
-  &--transparent:visited {
-    color: $dark-black;
+  &--transparent {
+    &:link,
+    &:visited {
+      color: $dark-black;
+    }
+
+    &:hover,
+    &:active {
+      font-weight: 500;
+      color: $white;
+      background-color: $dark-black;
+    }
   }
 
-  &--transparent:hover,
-  &--transparent:active,
-  &--solid:link,
-  &--solid:visited {
-    color: $white;
-    background-color: $dark-black;
+  &--solid {
+    &:link,
+    &:visited {
+      font-weight: 500;
+      color: $white;
+      background-color: $dark-black;
+    }
+    &:hover,
+    &:active {
+      background: lighten($dark-black, 20%);
+    }
   }
 
-  &--solid:hover,
-  &--solid:active {
-    background: lighten($dark-black, 20%);
+  &--underline {
+    &:link,
+    &:visited {
+      font-weight: 600;
+      color: $brown;
+      transition: all 0.3s;
+    }
+
+    &:hover,
+    &:active {
+      color: $medium-black;
+    }
   }
 }
 
@@ -33,7 +56,9 @@
   border: none;
 
   &--solid {
+    font-family: inherit;
     font-size: inherit;
+    font-weight: 500;
     color: $white;
     background-color: $dark-black;
   }

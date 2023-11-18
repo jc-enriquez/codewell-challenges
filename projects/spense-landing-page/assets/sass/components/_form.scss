@@ -1,0 +1,11 @@
+.form {
+  display: flex;
+  gap: 1.2rem;
+
+  &__input {
+    font-family: inherit;
+    padding: 1rem 1.5rem;
+    border: 1px solid $medium-black;
+    border-radius: 4px;
+  }
+}

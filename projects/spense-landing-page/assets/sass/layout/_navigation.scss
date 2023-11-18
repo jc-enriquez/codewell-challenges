@@ -4,12 +4,20 @@
   justify-content: space-between;
   padding: 4rem 0 2rem 0;
 
-  &__brand:link,
-  &__brand:visited {
-    font-size: 2rem;
-    font-weight: 700;
-    color: $dark-black;
-    text-decoration: none;
+  &__brand {
+    &:link,
+    &:visited {
+      font-size: 2rem;
+      font-weight: 700;
+      color: $dark-black;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    &:hover,
+    &:active {
+      color: lighten($dark-black, 10%);
+    }
   }
 
   &__list {

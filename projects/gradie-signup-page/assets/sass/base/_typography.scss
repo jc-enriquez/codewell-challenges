@@ -1,0 +1,41 @@
+html {
+  font-size: 62.5%;
+
+  @media screen and (max-width: $bp-tablet) {
+    font-size: 56.25%;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.heading-secondary {
+  font-size: 3.6rem;
+
+  &--light {
+    color: $white;
+  }
+
+  &--dark {
+    color: $black;
+  }
+}
+
+.paragraph {
+  font-size: 1.8rem;
+
+  &--light {
+    color: $primary-light;
+  }
+
+  &--dark {
+    color: $black;
+  }
+}

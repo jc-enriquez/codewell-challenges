@@ -1,0 +1,52 @@
+.form {
+  background-color: $white;
+  padding: 4rem 6rem;
+
+  &__input-group {
+    &--inline {
+      display: flex;
+      align-items: start;
+      gap: 1rem;
+    }
+  }
+
+  &__label {
+    font-size: 1.4rem;
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+
+    &--paragraph {
+      font-weight: 400;
+      font-size: inherit;
+    }
+  }
+
+  &__input {
+    font-family: inherit;
+    color: $primary;
+    border: 1px solid $gray;
+    padding: 1.5rem 1rem;
+    border-radius: 5px;
+    width: 100%;
+
+    &:focus {
+      outline: 1px solid $primary;
+      border: 1px solid transparent;
+    }
+  }
+
+  &__link:link,
+  &__link:visited {
+    font-weight: 500;
+    color: $primary;
+    text-decoration: none;
+    padding-bottom: 0.1rem;
+    border-bottom: 2px solid currentColor;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: lighten($primary, 5%);
+  }
+}

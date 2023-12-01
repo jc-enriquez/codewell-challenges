@@ -19,6 +19,10 @@
     &--paragraph {
       font-weight: 400;
       font-size: inherit;
+
+      & span {
+        display: block;
+      }
     }
   }
 
@@ -33,6 +37,31 @@
     &:focus {
       outline: 1px solid $primary;
       border: 1px solid transparent;
+    }
+  }
+
+  &__checkbox {
+    appearance: none;
+    background-color: $white;
+    border: 1px solid $gray;
+    padding: 0.8rem;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+
+    &:active,
+    &:checked {
+      background-color: $primary;
+      border: 1px solid transparent;
+    }
+
+    &:checked:after {
+      content: "\2714";
+      font-size: 14px;
+      position: absolute;
+      top: 0;
+      left: 3px;
+      color: $white;
     }
   }
 

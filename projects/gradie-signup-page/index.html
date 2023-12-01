@@ -43,6 +43,7 @@
               class="form__input"
               placeholder="john@example.com"
               name="email"
+              required
             />
           </div>
 
@@ -53,16 +54,20 @@
               class="form__input"
               placeholder="At least 8 characters"
               name="password"
+              required
             />
           </div>
 
           <div
             class="form__input-group form__input-group--inline u-margin-bottom-md"
           >
-            <input type="checkbox" name="terms" />
+            <input type="checkbox" name="terms" class="form__checkbox" />
             <label for="terms" class="form__label form__label--paragraph"
-              >By creating an account, you agree to the
-              <a href="#" class="form__link">Terms & Conditions</a>.</label
+              >By creating an account,
+              <span>
+                you agree to the
+                <a href="#" class="form__link">Terms & Conditions</a>.</span
+              ></label
             >
           </div>
 

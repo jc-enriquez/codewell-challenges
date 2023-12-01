@@ -24,6 +24,9 @@ body {
 
 .heading-secondary {
   font-size: 3.6rem; }
+  @media screen and (max-width: 46.875em) {
+    .heading-secondary {
+      font-size: 3rem; } }
   .heading-secondary--light {
     color: #fff; }
   .heading-secondary--dark {
@@ -57,6 +60,8 @@ body {
     .form__label--paragraph {
       font-weight: 400;
       font-size: inherit; }
+      .form__label--paragraph span {
+        display: block; }
   .form__input {
     font-family: inherit;
     color: #013243;
@@ -67,6 +72,24 @@ body {
     .form__input:focus {
       outline: 1px solid #013243;
       border: 1px solid transparent; }
+  .form__checkbox {
+    appearance: none;
+    background-color: #fff;
+    border: 1px solid #8d8d8d;
+    padding: 0.8rem;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer; }
+    .form__checkbox:active, .form__checkbox:checked {
+      background-color: #013243;
+      border: 1px solid transparent; }
+    .form__checkbox:checked:after {
+      content: "\2714";
+      font-size: 14px;
+      position: absolute;
+      top: 0;
+      left: 3px;
+      color: #fff; }
   .form__link:link, .form__link:visited {
     font-weight: 500;
     color: #013243;
@@ -112,7 +135,12 @@ body {
   @media screen and (max-width: 46.875em) {
     .form-container {
       grid-template-columns: 1fr;
-      border-radius: 0 0 10px 10px; } }
+      border-radius: 0 0 10px 10px;
+      max-width: 40rem; } }
+  @media screen and (max-width: 25em) {
+    .form-container {
+      border-radius: 0;
+      max-width: 100%; } }
   .form-container__details {
     display: flex;
     flex-direction: column;

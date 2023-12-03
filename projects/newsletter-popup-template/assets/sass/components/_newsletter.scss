@@ -1,0 +1,41 @@
+.newsletter {
+  max-width: 50rem;
+  text-align: center;
+
+  &__header {
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/pattern.png);
+    background-color: $primary;
+    border-radius: 8px 8px 0 0;
+  }
+
+  &__body {
+    background-color: $white;
+
+    padding: 3rem;
+    border-radius: 0 0 8px 8px;
+  }
+
+  &__review {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+  }
+
+  &__author {
+    &-name {
+      font-weight: 600;
+      color: $black;
+    }
+
+    &-role {
+      color: $gray;
+    }
+  }
+}

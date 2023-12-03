@@ -1,0 +1,33 @@
+html {
+  font-size: 62.5%;
+
+  @media screen and (max-width: $bp-tablet) {
+    font-size: 50%;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    font-size: 40%;
+  }
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.6rem;
+}
+
+.heading-primary {
+  font-weight: 600;
+  color: $white;
+
+  & span {
+    display: block;
+  }
+}
+
+.paragraph {
+  color: $gray;
+
+  & span {
+    display: block;
+  }
+}

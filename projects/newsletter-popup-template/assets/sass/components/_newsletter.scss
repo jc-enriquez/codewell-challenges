@@ -10,6 +10,10 @@
     background: url(../images/pattern.png);
     background-color: $primary;
     border-radius: 8px 8px 0 0;
+
+    @media screen and (max-width: $bp-mobile) {
+      border-radius: 0;
+    }
   }
 
   &__body {
@@ -17,6 +21,10 @@
 
     padding: 3rem;
     border-radius: 0 0 8px 8px;
+
+    @media screen and (max-width: $bp-mobile) {
+      border-radius: 0;
+    }
   }
 
   &__review {

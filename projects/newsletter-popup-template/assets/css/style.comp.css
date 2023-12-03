@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box; }
+
+main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../images/background.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media screen and (max-width: 25em) {
+    main {
+      min-height: fit-content; } }
+
+html {
+  font-size: 62.5%; }
+  @media screen and (max-width: 50em) {
+    html {
+      font-size: 50%; } }
+  @media screen and (max-width: 25em) {
+    html {
+      font-size: 40%; } }
+
+body {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.6rem; }
+
+.heading-primary {
+  font-weight: 600;
+  color: #ffffff; }
+  .heading-primary span {
+    display: block; }
+
+.paragraph {
+  color: #636363; }
+  .paragraph span {
+    display: block; }
+
+.u-margin-bottom-sm {
+  margin-bottom: 1.6rem; }
+
+.u-margin-bottom-md {
+  margin-bottom: 2.4rem; }
+
+.u-margin-bottom-lg {
+  margin-bottom: 3.2rem; }
+
+.btn--solid {
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  border: none;
+  background-color: #2355f2;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s; }
+  .btn--solid:hover {
+    background-color: #0e44ed; }
+
+.form__input-group {
+  display: flex;
+  gap: 1rem; }
+
+.form__input {
+  font-family: inherit;
+  width: 100%;
+  background-color: #f5f7fa;
+  border: 1px solid #e6e8f0;
+  border-radius: 4px;
+  padding: 1rem 2rem; }
+  .form__input:focus {
+    border: 1px solid transparent;
+    outline: 1px solid #2355f2; }
+
+.form__description {
+  display: block;
+  text-align: left;
+  color: #b1b1b1; }
+
+.newsletter {
+  max-width: 50rem;
+  text-align: center; }
+  .newsletter__header {
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/pattern.png);
+    background-color: #2355f2;
+    border-radius: 8px 8px 0 0; }
+    @media screen and (max-width: 25em) {
+      .newsletter__header {
+        border-radius: 0; } }
+  .newsletter__body {
+    background-color: #ffffff;
+    padding: 3rem;
+    border-radius: 0 0 8px 8px; }
+    @media screen and (max-width: 25em) {
+      .newsletter__body {
+        border-radius: 0; } }
+  .newsletter__review {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: left; }
+  .newsletter__author-name {
+    font-weight: 600;
+    color: #000000; }
+  .newsletter__author-role {
+    color: #636363; }

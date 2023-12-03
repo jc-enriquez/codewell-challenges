@@ -18,8 +18,4 @@ main {
   background: url(../images/background.png);
   background-size: cover;
   background-repeat: no-repeat;
-
-  @media screen and (max-width: $bp-mobile) {
-    min-height: fit-content;
-  }
 }

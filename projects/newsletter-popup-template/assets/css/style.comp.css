@@ -16,9 +16,6 @@ main {
   background: url(../images/background.png);
   background-size: cover;
   background-repeat: no-repeat; }
-  @media screen and (max-width: 25em) {
-    main {
-      min-height: fit-content; } }
 
 html {
   font-size: 62.5%; }
@@ -96,16 +93,10 @@ body {
     background: url(../images/pattern.png);
     background-color: #2355f2;
     border-radius: 8px 8px 0 0; }
-    @media screen and (max-width: 25em) {
-      .newsletter__header {
-        border-radius: 0; } }
   .newsletter__body {
     background-color: #ffffff;
     padding: 3rem;
     border-radius: 0 0 8px 8px; }
-    @media screen and (max-width: 25em) {
-      .newsletter__body {
-        border-radius: 0; } }
   .newsletter__review {
     font-size: 1.4rem;
     display: flex;

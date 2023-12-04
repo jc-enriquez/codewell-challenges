@@ -1,0 +1,30 @@
+html {
+  font-size: 62.5%;
+
+  @media screen and (max-width: $bp-tablet) {
+    font-size: 56.25%;
+  }
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.2;
+}
+
+.paragraph {
+  color: $clr-dark-gray;
+
+  & span {
+    display: block;
+  }
+}
+
+.heading-secondary {
+  font-size: 4rem;
+  line-height: 1.2;
+}

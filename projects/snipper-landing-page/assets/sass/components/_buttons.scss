@@ -1,0 +1,29 @@
+.btn {
+  &--search {
+    background: none;
+    border: none;
+  }
+
+  &--link {
+    & span {
+      font-weight: 600;
+      color: $clr-white;
+    }
+
+    &:link,
+    &:visited {
+      color: $clr-light-gray;
+      text-decoration: none;
+      background-color: $clr-black;
+      border-radius: 6px;
+      padding: 1rem 2rem;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+
+    &:hover,
+    &:active {
+      background-color: lighten($clr-black, 10%);
+    }
+  }
+}

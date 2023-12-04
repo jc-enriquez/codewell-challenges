@@ -1,0 +1,27 @@
+.footer {
+  padding-bottom: 6rem;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    gap: 2.4rem;
+    list-style: none;
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    color: $clr-dark-gray;
+    transition: color 0.3s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: $clr-black;
+  }
+}

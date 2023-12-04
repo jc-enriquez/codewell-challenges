@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 0 8rem;
+
+  &__ctas {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  &__link:link,
+  &__link:visited {
+    text-decoration: none;
+    color: $clr-dark-gray;
+    transition: color 0.3s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: $clr-black;
+  }
+}

@@ -1,0 +1,42 @@
+.section-hero {
+  background: url(../images/background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero {
+  &__text-box {
+    text-align: center;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.section-customizable {
+  padding-block: 6rem;
+}
+
+.text-box {
+  @media screen and (max-width: $bp-tablet) {
+    order: 2;
+  }
+}
+
+.img-box {
+  @media screen and (max-width: $bp-tablet) {
+    order: 1;
+  }
+
+  & img {
+    width: 100%;
+
+    @media screen and (max-width: $bp-tablet) {
+      display: block;
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+}

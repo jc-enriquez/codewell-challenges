@@ -1,0 +1,47 @@
+.hero {
+  &__content {
+    margin-bottom: 9.6rem;
+
+    @media screen and(max-width: $bp-large) {
+      margin-bottom: 4.8rem;
+    }
+  }
+
+  &__caption {
+    background-color: $clr-primary;
+    color: $clr-primary-light;
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border-radius: 100px;
+    margin-bottom: 2.4rem;
+
+    & a:link,
+    & a:visited {
+      font-weight: 700;
+      color: inherit;
+      transition: color 0.3s;
+    }
+
+    & a:hover,
+    & a:active {
+      color: $clr-white;
+    }
+  }
+
+  &__text-box {
+    @media screen and(max-width: $bp-large) {
+      text-align: center;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+
+    &-box {
+      @media screen and(max-width: $bp-large) {
+        display: none;
+      }
+    }
+  }
+}

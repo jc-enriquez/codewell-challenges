@@ -1,0 +1,33 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 6rem;
+
+  &__main {
+    display: flex;
+    gap: 1.6rem;
+  }
+
+  &__list {
+    display: flex;
+    gap: 1.6rem;
+    list-style: none;
+    align-items: center;
+  }
+
+  &__link:link,
+  &__link:visited {
+    color: $clr-gray;
+    text-decoration: none;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: $clr-primary;
+    border-bottom: 1px solid currentColor;
+  }
+}

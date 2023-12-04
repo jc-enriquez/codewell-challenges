@@ -7,6 +7,10 @@
   &__main {
     display: flex;
     gap: 1.6rem;
+
+    @media screen and(max-width: $bp-large) {
+      display: none;
+    }
   }
 
   &__list {

@@ -17,6 +17,7 @@
 }
 
 .btn {
+  font-family: inherit;
   font-weight: 600;
   font-size: inherit;
   border: none;
@@ -32,5 +33,15 @@
     &:hover {
       background-color: lighten($clr-primary, 5%);
     }
+  }
+}
+
+.btn-nav {
+  background-color: transparent;
+  border: none;
+  display: none;
+
+  @media screen and(max-width: $bp-large) {
+    display: block;
   }
 }

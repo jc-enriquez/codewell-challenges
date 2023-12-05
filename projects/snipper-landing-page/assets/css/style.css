@@ -13,6 +13,9 @@ html {
   @media screen and (max-width: 50em) {
     html {
       font-size: 56.25%; } }
+  @media screen and (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: "Poppins", sans-serif;
@@ -47,7 +50,8 @@ body {
 
 .btn--search {
   background: none;
-  border: none; }
+  border: none;
+  cursor: pointer; }
 
 .btn--link span {
   font-weight: 600;
@@ -65,12 +69,26 @@ body {
 .btn--link:hover, .btn--link:active {
   background-color: #1a1a1a; }
 
+.btn--mobile {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: none; }
+  @media screen and (max-width: 31.25em) {
+    .btn--mobile {
+      display: block; } }
+
 .footer {
   padding-bottom: 6rem; }
   .footer__container {
     display: flex;
     align-items: center;
     justify-content: space-between; }
+    @media screen and (max-width: 31.25em) {
+      .footer__container {
+        flex-direction: column;
+        align-items: start;
+        gap: 1.2rem; } }
   .footer__list {
     display: flex;
     gap: 2.4rem;
@@ -102,6 +120,9 @@ body {
     display: flex;
     align-items: center;
     gap: 1.6rem; }
+    @media screen and (max-width: 31.25em) {
+      .header__ctas {
+        display: none; } }
   .header__link:link, .header__link:visited {
     text-decoration: none;
     color: #383838;
@@ -139,3 +160,6 @@ body {
       display: block;
       width: 50%;
       margin: 0 auto; } }
+  @media screen and (max-width: 31.25em) {
+    .img-box img {
+      width: 75%; } }

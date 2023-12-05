@@ -4,6 +4,10 @@ html {
   @media screen and (max-width: $bp-tablet) {
     font-size: 56.25%;
   }
+
+  @media screen and (max-width: $bp-medium) {
+    font-size: 50%;
+  }
 }
 
 body {

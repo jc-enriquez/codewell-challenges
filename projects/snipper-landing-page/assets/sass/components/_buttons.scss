@@ -2,6 +2,7 @@
   &--search {
     background: none;
     border: none;
+    cursor: pointer;
   }
 
   &--link {
@@ -24,6 +25,17 @@
     &:hover,
     &:active {
       background-color: lighten($clr-black, 10%);
+    }
+  }
+
+  &--mobile {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+
+    @media screen and (max-width: $bp-small) {
+      display: block;
     }
   }
 }

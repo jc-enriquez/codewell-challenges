@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.6rem; }
+
+.heading {
+  font-weight: 600;
+  color: #000000; }
+  .heading--primary {
+    font-size: 6.4rem;
+    line-height: 1; }
+  .heading--secondary {
+    font-size: 4.4rem;
+    line-height: 1.2; }
+
+.paragraph span {
+  color: #664efc;
+  font-weight: 600; }
+
+.paragraph--light {
+  color: #6b6b6b; }
+
+.u-container {
+  max-width: 120rem;
+  margin: 0 auto; }
+
+.u-margin-bottom-xs {
+  margin-bottom: 1rem; }
+
+.u-margin-bottom-sm {
+  margin-bottom: 1.6rem; }
+
+.u-margin-bottom-md {
+  margin-bottom: 2.4rem; }
+
+.btn--solid:link, .btn--solid:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #f9f0fd;
+  background-color: #664efc;
+  padding: 1.5rem 2rem;
+  border-radius: 4px;
+  transition: background-color 0.3s; }
+
+.btn--solid:hover, .btn--solid:active {
+  background-color: #7c67fc; }
+
+.btn--solid span {
+  font-weight: 600;
+  color: #ffffff; }
+
+.footer {
+  padding: 6rem 0; }
+  .footer__content {
+    display: flex; }
+
+.grid {
+  display: grid; }
+
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center; }
+
+.grid-gap-lg {
+  gap: 12rem; }
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 0; }
+  .navigation__ctas, .navigation__list {
+    display: flex;
+    gap: 1.6rem; }
+  .navigation__ctas {
+    align-items: center; }
+  .navigation__list {
+    list-style: none; }
+  .navigation__link:link, .navigation__link:visited {
+    color: #201f1f;
+    text-decoration: none;
+    transition: color 0.3s; }
+  .navigation__link:hover, .navigation__link:active {
+    color: #664efc; }
+
+.hero-content {
+  padding: 4rem 0 16rem 0; }
+
+.img-box img {
+  width: 100%; }
+
+.section-curate {
+  padding: 10rem 0; }
+
+.cta:link, .cta:visited {
+  color: #664efc;
+  text-decoration: none;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+  transition: all 0.3s;
+  border-bottom: 2px solid transparent; }
+
+.cta:hover, .cta:active {
+  border-bottom: 2px solid currentColor; }

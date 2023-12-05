@@ -1,0 +1,24 @@
+.btn {
+  &--solid {
+    &:link,
+    &:visited {
+      display: inline-block;
+      text-decoration: none;
+      color: $clr-off-white;
+      background-color: $clr-primary;
+      padding: 1.5rem 2rem;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    &:hover,
+    &:active {
+      background-color: lighten($clr-primary, 5%);
+    }
+
+    & span {
+      font-weight: 600;
+      color: $clr-white;
+    }
+  }
+}

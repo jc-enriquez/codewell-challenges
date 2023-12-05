@@ -1,0 +1,33 @@
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 0;
+
+  &__ctas,
+  &__list {
+    display: flex;
+
+    gap: 1.6rem;
+  }
+
+  &__ctas {
+    align-items: center;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__link:link,
+  &__link:visited {
+    color: $clr-dark-gray;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: $clr-primary;
+  }
+}

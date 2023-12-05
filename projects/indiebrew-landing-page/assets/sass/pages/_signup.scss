@@ -1,0 +1,18 @@
+.section-signup {
+  min-height: 100vh;
+  background-color: $clr-light-pink;
+}
+
+.signup {
+  &__contents {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  &__content {
+    display: flex;
+    align-items: start;
+    gap: 1rem;
+  }
+}

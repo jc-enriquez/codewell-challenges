@@ -1,0 +1,56 @@
+.form {
+  background-color: $clr-white;
+  padding: 4rem;
+  border-radius: 8px;
+
+  &__title {
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+
+  &__input-group {
+    &--flexed {
+      display: flex;
+      align-items: start;
+      gap: 1.2rem;
+
+      & .form__label {
+        font-weight: normal;
+      }
+    }
+  }
+
+  &__label {
+    display: block;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 1.5rem;
+    font-family: inherit;
+    border: 1px solid $clr-light-gray;
+    border-radius: 4px;
+
+    &:focus {
+      outline: none;
+      border: 1px solid $clr-primary;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $clr-primary;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    &:hover,
+    &:active {
+      color: lighten($clr-primary, 5%);
+    }
+  }
+}

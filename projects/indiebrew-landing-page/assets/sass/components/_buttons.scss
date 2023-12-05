@@ -1,5 +1,17 @@
 .btn {
   &--solid {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: inherit;
+    color: $clr-off-white;
+    width: 100%;
+    background-color: $clr-primary;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
     &:link,
     &:visited {
       display: inline-block;
@@ -9,6 +21,7 @@
       padding: 1.5rem 2rem;
       border-radius: 4px;
       transition: background-color 0.3s;
+      width: auto;
     }
 
     &:hover,

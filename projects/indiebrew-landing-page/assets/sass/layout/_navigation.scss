@@ -19,15 +19,34 @@
     list-style: none;
   }
 
-  &__link:link,
-  &__link:visited {
-    color: $clr-dark-gray;
-    text-decoration: none;
-    transition: color 0.3s;
+  &__link {
+    &:link,
+    &:visited {
+      color: $clr-dark-gray;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    &:hover,
+    &:active {
+      color: $clr-primary;
+    }
+
+    &--flexed {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+
+      & span {
+        display: block;
+      }
+    }
   }
 
-  &__link:hover,
-  &__link:active {
-    color: $clr-primary;
+  &__icon {
+    border: 1px solid $clr-light-gray;
+    background-color: $clr-off-white;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
   }
 }

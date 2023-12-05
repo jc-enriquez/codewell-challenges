@@ -30,4 +30,12 @@ body {
   &--light {
     color: $clr-medium-gray;
   }
+
+  &--dark {
+    color: $clr-black;
+
+    & span {
+      color: inherit;
+    }
+  }
 }

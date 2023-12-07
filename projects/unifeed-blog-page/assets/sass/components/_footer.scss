@@ -1,0 +1,23 @@
+.footer {
+  padding: 4rem 0;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: $bp-medium) {
+      flex-direction: column;
+      align-items: start;
+      gap: 2.4rem;
+    }
+  }
+
+  &__logo {
+    display: block;
+  }
+
+  &__copyright {
+    color: $clr-gray;
+  }
+}

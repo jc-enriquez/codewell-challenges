@@ -1,0 +1,7 @@
+.section-blog {
+  padding: 6rem 0;
+
+  @media screen and (max-width: $bp-tablet) {
+    padding: 0;
+  }
+}

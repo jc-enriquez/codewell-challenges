@@ -1,0 +1,53 @@
+html {
+  font-size: 62.5%;
+
+  @media screen and (max-width: $bp-tablet) {
+    font-size: 56.25%;
+  }
+
+  @media screen and (max-width: $bp-medium) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 1.8rem;
+}
+
+.article {
+  &__title {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $clr-black;
+      font-size: 3.6rem;
+      font-weight: 600;
+      line-height: 1.2;
+      display: inline-block;
+      transition: color 0.3s;
+    }
+
+    &:hover,
+    &:active {
+      color: $clr-orange;
+    }
+  }
+
+  &__description {
+    color: $clr-gray;
+    line-height: 1.6;
+  }
+
+  &__author {
+    font-size: 1.4rem;
+
+    &__name {
+      font-weight: 700;
+    }
+
+    &__role {
+      color: $clr-gray;
+    }
+  }
+}

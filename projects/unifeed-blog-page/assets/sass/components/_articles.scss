@@ -1,0 +1,43 @@
+.article {
+  &__main {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    gap: 6.4rem;
+    margin-bottom: 9.6rem;
+
+    @media screen and (max-width: $bp-tablet) {
+      grid-template-columns: 1fr;
+      gap: 2.4rem;
+      margin-bottom: 3.2rem;
+    }
+  }
+
+  &__author {
+    display: flex;
+    gap: 2.4rem;
+    align-items: center;
+
+    &__avatar {
+      height: 6.4rem;
+      width: 6.4rem;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+
+    &--sub {
+      margin-bottom: 3.2rem;
+
+      @media screen and (max-width: $bp-tablet) {
+        margin-bottom: 2.4rem;
+      }
+    }
+
+    &--main {
+      margin-bottom: 0;
+    }
+  }
+}

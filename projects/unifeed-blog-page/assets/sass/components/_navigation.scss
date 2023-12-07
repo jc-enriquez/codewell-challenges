@@ -1,0 +1,43 @@
+.navigation {
+  padding: 4rem 0;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: block;
+  }
+
+  &__ctas {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+
+    @media screen and (max-width: $bp-medium) {
+      display: none;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 2.4rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $clr-gray;
+      transition: color 0.3s;
+    }
+
+    &:hover,
+    &:active {
+      color: $clr-orange;
+    }
+  }
+}

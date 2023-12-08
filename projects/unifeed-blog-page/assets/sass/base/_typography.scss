@@ -25,7 +25,7 @@ body {
       font-weight: 600;
       line-height: 1.2;
       display: inline-block;
-      transition: color 0.3s;
+      transition: all 0.3s;
     }
 
     &:hover,
@@ -43,7 +43,19 @@ body {
     font-size: 1.4rem;
 
     &__name {
-      font-weight: 700;
+      &:link,
+      &:visited {
+        font-weight: 700;
+        color: $clr-black;
+        text-decoration: none;
+        transition: color 0.3s;
+        display: inline-block;
+      }
+
+      &:hover,
+      &:active {
+        color: $clr-orange;
+      }
     }
 
     &__role {

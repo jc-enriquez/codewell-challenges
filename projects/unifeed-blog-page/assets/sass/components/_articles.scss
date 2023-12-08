@@ -18,7 +18,11 @@
     transition: transform 0.3s;
 
     &:hover {
-      transform: translateY(-5px);
+      transform: translateY(-8px);
+
+      & .article__title--sub {
+        color: $clr-orange;
+      }
     }
   }
 
@@ -30,16 +34,6 @@
     &__avatar {
       height: 6.4rem;
       width: 6.4rem;
-    }
-  }
-
-  &__img-container {
-    cursor: pointer;
-    overflow: hidden;
-    border-radius: 7px;
-
-    &:hover .article__img {
-      scale: 1.1;
     }
   }
 

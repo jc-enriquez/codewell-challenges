@@ -28,7 +28,7 @@ body {
   font-weight: 600;
   line-height: 1.2;
   display: inline-block;
-  transition: color 0.3s; }
+  transition: all 0.3s; }
 
 .article__title:hover, .article__title:active {
   color: #ee7c0d; }
@@ -39,8 +39,14 @@ body {
 
 .article__author {
   font-size: 1.4rem; }
-  .article__author__name {
-    font-weight: 700; }
+  .article__author__name:link, .article__author__name:visited {
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: inline-block; }
+  .article__author__name:hover, .article__author__name:active {
+    color: #ee7c0d; }
   .article__author__role {
     color: #656565; }
 
@@ -71,7 +77,9 @@ body {
   cursor: pointer;
   transition: transform 0.3s; }
   .article--sub:hover {
-    transform: translateY(-5px); }
+    transform: translateY(-8px); }
+    .article--sub:hover .article__title--sub {
+      color: #ee7c0d; }
 
 .article__author {
   display: flex;
@@ -80,13 +88,6 @@ body {
   .article__author__avatar {
     height: 6.4rem;
     width: 6.4rem; }
-
-.article__img-container {
-  cursor: pointer;
-  overflow: hidden;
-  border-radius: 7px; }
-  .article__img-container:hover .article__img {
-    scale: 1.1; }
 
 .article__img {
   display: block;

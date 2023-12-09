@@ -21,6 +21,7 @@
   border: none;
   cursor: pointer;
   display: none;
+  z-index: 2;
 
   @media screen and (max-width: $bp-medium) {
     display: block;

@@ -2,7 +2,7 @@
   &--main {
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.5fr 2.5fr;
     gap: 6.4rem;
     margin-bottom: 9.6rem;
 
@@ -48,11 +48,18 @@
 
       @media screen and (max-width: $bp-tablet) {
         margin-bottom: 2.4rem;
+        height: 20rem;
+        object-fit: cover;
       }
     }
 
     &--main {
       margin-bottom: 0;
+
+      @media screen and (max-width: $bp-tablet) {
+        height: 25rem;
+        object-fit: cover;
+      }
     }
   }
 }

@@ -40,6 +40,8 @@
   background-color: transparent;
   border: none;
   display: none;
+  cursor: pointer;
+  z-index: 2;
 
   @media screen and(max-width: $bp-large) {
     display: block;

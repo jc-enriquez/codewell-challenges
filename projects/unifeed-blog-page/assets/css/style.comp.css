@@ -61,6 +61,9 @@ body {
 .u-margin-bottom-md {
   margin-bottom: 2.4rem; }
 
+.u-prevent-scroll {
+  overflow-y: hidden; }
+
 .article--main {
   display: grid;
   align-items: center;

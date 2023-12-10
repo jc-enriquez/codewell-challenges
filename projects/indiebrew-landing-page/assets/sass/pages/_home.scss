@@ -1,19 +1,85 @@
-// .section-hero {
-//   background-color: red;
-// }
+.section-hero {
+  // background: radial-gradient(ellipse at bottom, $clr-pink, $clr-light-yellow),
+  //   $clr-light-yellow;
+  // background-size: 5%, cover;
+  // background-repeat: no-repeat;
+  background: $clr-light-yellow;
+}
 
 .hero-content {
   padding: 4rem 0 16rem 0;
+
+  @media screen and (max-width: $bp-tablet) {
+    padding: 2rem 0 12rem 0;
+  }
+}
+
+.text-box {
+  &--hero {
+    @media screen and (max-width: $bp-tablet) {
+      order: 2;
+    }
+  }
 }
 
 .img-box {
+  &--hero {
+    @media screen and (max-width: $bp-tablet) {
+      order: 1;
+      width: 60%;
+      margin: 0 auto;
+    }
+
+    @media screen and (max-width: $bp-small) {
+      width: 100%;
+    }
+  }
+
   img {
     width: 100%;
+    display: block;
+
+    @media screen and (max-width: $bp-small) {
+      width: 60%;
+      margin: 0 auto;
+    }
   }
 }
 
 .section-curate {
   padding: 10rem 0;
+
+  @media screen and (max-width: $bp-tablet) {
+    padding: 8rem 0;
+  }
+}
+
+.curate {
+  &__header {
+    margin-bottom: 10rem;
+
+    & .img-box {
+      max-width: 35rem;
+      justify-self: end;
+
+      @media screen and (max-width: $bp-small) {
+        order: 1;
+        max-width: none;
+      }
+
+      & img {
+        @media screen and (max-width: $bp-small) {
+          width: 100%;
+        }
+      }
+    }
+
+    & .text-box {
+      @media screen and (max-width: $bp-small) {
+        order: 2;
+      }
+    }
+  }
 }
 
 .cta {

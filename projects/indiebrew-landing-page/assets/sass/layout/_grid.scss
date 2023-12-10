@@ -5,8 +5,26 @@
 .grid-2-cols {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  gap: 2.4rem;
+
+  @media screen and (max-width: $bp-small) {
+    grid-template-columns: 1fr;
+  }
+
+  &--hero {
+    gap: 0;
+
+    @media screen and (max-width: $bp-tablet) {
+      grid-template-columns: 1fr;
+      gap: 2.4rem;
+    }
+  }
 }
 
 .grid-gap-lg {
   gap: 12rem;
+
+  @media screen and (max-width: $bp-tablet) {
+    gap: 2.4rem;
+  }
 }

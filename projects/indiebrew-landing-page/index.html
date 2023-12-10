@@ -40,11 +40,15 @@
                 ><span>Get Started</span> &mdash; it's free</a
               >
             </div>
+
+            <button class="btn--mobile">
+              <img src="assets/images/hamburger-icon.svg" alt="Hamburge icon" />
+            </button>
           </nav>
 
           <div class="hero-content">
-            <div class="grid grid-2-cols">
-              <div class="text-box">
+            <div class="grid grid-2-cols grid-2-cols--hero">
+              <div class="text-box text-box--hero">
                 <div class="text-box__intro u-margin-bottom-md">
                   <h1 class="heading heading--primary u-margin-bottom-sm">
                     Your weekly personal feed digest
@@ -71,7 +75,7 @@
                 </div>
               </div>
 
-              <div class="img-box">
+              <div class="img-box img-box--hero">
                 <img src="assets/images/feed-mockup.png" alt="Feed mockup" />
               </div>
             </div>
@@ -81,7 +85,7 @@
 
       <section class="section-curate">
         <div class="u-container">
-          <header class="grid grid-2-cols">
+          <header class="curate__header grid grid-2-cols grid-gap-sm">
             <div class="text-box">
               <h2 class="heading heading--secondary u-margin-bottom-xs">
                 Curate your feed from dozens of resources
@@ -96,6 +100,7 @@
               <img
                 src="assets/images/social-media-icons.png"
                 alt="Social media icons"
+                class="curate__img"
               />
             </div>
           </header>
@@ -123,11 +128,13 @@
       <div class="u-container">
         <div class="footer__content">
           <div class="footer__info">
-            <h3 class="footer__title">IndieBrew</h3>
-            <p class="paragraph paragraph--light">
-              With IndieBrew, get personal feeds from resources all around the
-              web, including Reddit, HackerNews, and much more.
-            </p>
+            <div>
+              <h3 class="">IndieBrew</h3>
+              <p class="paragraph paragraph--light">
+                With IndieBrew, get personal feeds from resources all around the
+                web, including Reddit, HackerNews, and much more.
+              </p>
+            </div>
             <p class="paragraph paragraph--light">
               Made with &hearts; in the UK.
             </p>
@@ -192,5 +199,6 @@
         </div>
       </div>
     </footer>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

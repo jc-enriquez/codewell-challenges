@@ -1,5 +1,13 @@
 html {
   font-size: 62.5%;
+
+  @media screen and (max-width: $bp-tablet) {
+    font-size: 56.25%;
+  }
+
+  @media screen and (max-width: $bp-medium) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -14,11 +22,19 @@ body {
   &--primary {
     font-size: 6.4rem;
     line-height: 1;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 5.2rem;
+    }
   }
 
   &--secondary {
     font-size: 4.4rem;
     line-height: 1.2;
+
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 3.6rem;
+    }
   }
 }
 

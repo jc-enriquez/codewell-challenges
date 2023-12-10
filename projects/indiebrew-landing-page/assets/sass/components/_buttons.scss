@@ -34,4 +34,16 @@
       color: $clr-white;
     }
   }
+
+  &--mobile {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+    z-index: 2;
+
+    @media screen and (max-width: $bp-small) {
+      display: block;
+    }
+  }
 }

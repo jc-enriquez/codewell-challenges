@@ -7,12 +7,32 @@
   &__ctas,
   &__list {
     display: flex;
-
     gap: 1.6rem;
+
+    @media screen and (max-width: $bp-small) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   &__ctas {
     align-items: center;
+
+    @media screen and (max-width: $bp-small) {
+      display: none;
+      opacity: 0;
+      background-color: rgba($clr-white, 0.7);
+      backdrop-filter: blur(10px);
+      position: absolute;
+      height: 100vh;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+
+      z-index: 1;
+    }
   }
 
   &__list {
@@ -49,4 +69,9 @@
     border-radius: 4px;
     padding: 0.5rem 1rem;
   }
+}
+
+.active .navigation__ctas {
+  display: flex;
+  opacity: 1;
 }

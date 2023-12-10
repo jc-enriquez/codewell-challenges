@@ -1,7 +1,42 @@
 .footer {
   padding: 6rem 0;
-  // background-color: red;
+  background-color: $clr-light-yellow;
+  color: $clr-dark-gray;
+
   &__content {
     display: flex;
+    justify-content: space-between;
+    gap: 4.8rem;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $clr-medium-gray;
+      transition: color 0.3s;
+    }
+
+    &:hover,
+    &:active {
+      color: $clr-primary;
+    }
   }
 }

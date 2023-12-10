@@ -60,3 +60,7 @@
   display: flex;
   opacity: 1;
 }
+
+.prevent-scroll {
+  overflow-y: hidden;
+}

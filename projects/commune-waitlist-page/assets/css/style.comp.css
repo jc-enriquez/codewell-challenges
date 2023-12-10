@@ -181,6 +181,9 @@ body {
   display: flex;
   opacity: 1; }
 
+.prevent-scroll {
+  overflow-y: hidden; }
+
 .hero__content {
   margin-bottom: 9.6rem; }
   @media screen and (max-width: 56.25em) {

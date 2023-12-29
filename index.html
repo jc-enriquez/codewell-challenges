@@ -12,92 +12,65 @@
       content="HTML, CSS, JavaScript, Codewell, John Christopher Enriquez"
     />
     <meta name="author" content="John Christopher Enriquez" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" href="assets/images/favicon.png" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Codewell Challenges &mdash; John Christopher Enriquez</title>
+    <title>JC Enriquez &mdash; Codewell Challenges</title>
   </head>
   <body>
-    <header>
-      <div class="header-text">
-        <h1>codewell-challenges</h1>
-        <p>
-          These are the challenges that I was able to complete in
-          <a href="https://www.codewell.cc/" target="_blank"
-            ><strong>Codewell</strong></a
-          >. You can view the code in this
-          <a
-            href="https://github.com/jc-enriquez/codewell-challenges"
-            target="_blank"
-            ><strong>repository</strong></a
-          >.
-        </p>
+    <header class="header">
+      <div class="header__content u-container">
+        <div class="header__text">
+          <h1 class="heading heading--primary u-margin-bottom-md">
+            codewell-challenges
+          </h1>
+          <p class="paragraph">
+            These are the challenges that I was able to complete in
+            <a
+              href="https://www.codewell.cc/"
+              target="_blank"
+              class="link--external"
+              >Codewell</a
+            >. You can view the code in this
+            <a
+              href="https://github.com/jc-enriquez/codewell-challenges"
+              target="_blank"
+              class="link--external"
+              >repository</a
+            >.
+          </p>
+        </div>
+        <button class="btn--mode" aria-label="Button dark mode">
+          <ion-icon name="moon" class="btn-icon"></ion-icon>
+        </button>
       </div>
-      <button>
-        <ion-icon name="sunny" class="btn-icon"></ion-icon>
-      </button>
     </header>
     <main>
-      <div>
-        <h2>Projects</h2>
-        <ul>
-          <li>
-            <a href="projects/spense-landing-page/" target="_blank"
-              >Spense Landing Page</a
-            >
-          </li>
-          <li>
-            <a href="projects/fiber-landing-page/" target="_blank"
-              >Fiber Landing Page</a
-            >
-          </li>
-          <li>
-            <a href="projects/gradie-signup-page/" target="_blank"
-              >Gradie Sign Up Page</a
-            >
-          </li>
-          <li>
-            <a href="projects/indiebrew-landing-page/" target="_blank"
-              >IndieBrew Landing Page</a
-            >
-          </li>
-          <li>
-            <a href="projects/snipper-landing-page/" target="_blank"
-              >Snipper Landing Page</a
-            >
-          </li>
-          <li>
-            <a href="projects/comment-module/" target="_blank"
-              >Comment Module</a
-            >
-          </li>
-          <li>
-            <a href="projects/commune-waitlist-page/" target="_blank"
-              >Commune Waitlist Page</a
-            >
-          </li>
-          <li>
-            <a href="projects/timenow-landing-page/" target="_blank"
-              >TimeNow Landing Page</a
-            >
-          </li>
-          <li>
-            <a href="projects/unifeed-blog-page/" target="_blank"
-              >Unifeed Blog Page</a
-            >
-          </li>
-          <li>
-            <a href="projects/newsletter-popup-template/" target="_blank"
-              >Newsletter Popup Template</a
-            >
-          </li>
-        </ul>
-      </div>
+      <section class="u-container">
+        <div class="projects-container grid grid-3-cols"></div>
+        <button class="btn--scroll" aria-label="Button scroll to top">
+          <ion-icon name="arrow-up-outline"></ion-icon>
+        </button>
+      </section>
     </main>
-    <footer>
-      All Rights Reserved &copy; <span class="year"></span>. Created by
-      <a href="https://jc-enriquez.github.io/" target="_blank"
-        ><strong>John Christopher Enriquez</strong></a
-      >
+    <footer class="footer">
+      <div class="footer__content u-container">
+        <p>All Rights Reserved &copy; <span class="year"></span>.</p>
+        <p>
+          Created by
+          <a
+            href="https://jc-ve.github.io/"
+            target="_blank"
+            class="link--external"
+            ><strong>John Christopher Enriquez</strong></a
+          >
+        </p>
+      </div>
     </footer>
     <script
       type="module"

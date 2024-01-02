@@ -51,189 +51,138 @@ window.addEventListener("scroll", watchScroll);
 btnScroll.addEventListener("click", scrollToTop);
 
 // Display Projects
-const projects = {
-  proj1: {
+const projects = [
+  {
     title: "Spense Landing Page",
     projLink: "projects/spense-landing-page/",
     codeLink:
       "https://github.com/jc-ve/codewell-challenges/tree/main/projects/spense-landing-page",
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/codewell/spense-landing-page.webp",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-      sass: "SASS",
-      js: "JavaScript",
-    },
+    skills: ["HTML", "CSS", "SASS", "JavaScript"],
   },
-  proj2: {
+  {
     title: "Fiber Landing Page",
     projLink: "projects/fiber-landing-page/",
     codeLink:
       "https://github.com/jc-ve/codewell-challenges/tree/main/projects/fiber-landing-page",
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/codewell/fiber-landing-page.webp",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-      sass: "SASS",
-      js: "JavaScript",
-    },
+    skills: ["HTML", "CSS", "SASS", "JavaScript"],
   },
-  proj3: {
+  {
     title: "Gradie Sign Up Page",
     projLink: "projects/gradie-signup-page/",
     codeLink:
       "https://github.com/jc-ve/codewell-challenges/tree/main/projects/gradie-signup-page",
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/codewell/gradie-sign-up-page.webp",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-      sass: "SASS",
-    },
+    skills: ["HTML", "CSS", "SASS"],
   },
-  proj4: {
+  {
     title: "IndieBrew Landing Page",
     projLink: "projects/indiebrew-landing-page/",
     codeLink:
       "https://github.com/jc-ve/codewell-challenges/tree/main/projects/indiebrew-landing-page",
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/codewell/indiebrew-landing-page.webp",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-      sass: "SASS",
-      js: "JavaScript",
-    },
+    skills: ["HTML", "CSS", "SASS", "JavaScript"],
   },
-  proj5: {
+  {
     title: "Snipper Landing Page",
     projLink: "projects/snipper-landing-page/",
     codeLink:
       "https://github.com/jc-ve/codewell-challenges/tree/main/projects/snipper-landing-page",
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/codewell/snipper-landing-page.webp",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-      sass: "SASS",
-      js: "JavaScript",
-    },
+    skills: ["HTML", "CSS", "SASS", "JavaScript"],
   },
-  proj6: {
+  {
     title: "Comment Module",
     projLink: "projects/comment-module/",
     codeLink:
       "https://github.com/jc-ve/codewell-challenges/tree/main/projects/comment-module",
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/codewell/comment-module.webp",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-      sass: "SASS",
-    },
+    skills: ["HTML", "CSS", "SASS"],
   },
-  proj7: {
+  {
     title: "Commune Waitlist Page",
     projLink: "projects/commune-waitlist-page/",
     codeLink:
       "https://github.com/jc-ve/codewell-challenges/tree/main/projects/commune-waitlist-page",
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/codewell/commune-waitlist-page.webp",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-      sass: "SASS",
-      js: "JavaScript",
-    },
+    skills: ["HTML", "CSS", "SASS", "JavaScript"],
   },
-  proj8: {
+  {
     title: "TimeNow Landing Page",
-    projLink: "projects/commune-waitlist-page/",
+    projLink: "projects/timenow-landing-age/",
     codeLink:
       "https://github.com/jc-ve/codewell-challenges/tree/main/projects/timenow-landing-page",
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/codewell/timenow-landing-page.webp",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-      sass: "SASS",
-      js: "JavaScript",
-    },
+    skills: ["HTML", "CSS", "SASS", "JavaScript"],
   },
-  proj9: {
+  {
     title: "Unifeed Blog Page",
     projLink: "projects/unifeed-blog-page/",
     codeLink:
       "https://github.com/jc-ve/codewell-challenges/tree/main/projects/unifeed-blog-page",
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/codewell/unifeed-blog-page.webp",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-      sass: "SASS",
-      js: "JavaScript",
-    },
+    skills: ["HTML", "CSS", "SASS", "JavaScript"],
   },
-  proj10: {
+  {
     title: "Newsletter Popup Template",
     projLink: "projects/newsletter-popup-template/",
     codeLink:
       "https://github.com/jc-ve/codewell-challenges/tree/main/projects/newsletter-popup-template",
     imgLink:
       "https://cdn.jsdelivr.net/gh/jc-ve/images-thumbnail/codewell/newsletter-popup-template.webp",
-    skills: {
-      html: "HTML",
-      css: "CSS",
-      sass: "SASS",
-    },
+    skills: ["HTML", "CSS", "SASS"],
   },
-};
+];
 
-Object.values(projects).forEach((project) => {
-  let skillContainer = [];
+const displayProjects = () => {
+  projects.forEach(({ title, projLink, codeLink, imgLink, skills }) => {
+    let skillsContainer = [];
 
-  Object.keys(project.skills).forEach((skill) => {
-    skillContainer.push(
-      `<span class="card__skill card__skill--${skill}">${skill.toUpperCase()}</span>`
-    );
-  });
+    skills.forEach((skill) => {
+      skillsContainer.push(
+        `<span class="card__skill card__skill--${skill.toLowerCase()}">${skill}</span>`
+      );
+    });
 
-  const html = `
+    const html = `
   <div class="card">
     <img
-      src="${project.imgLink}"
-      alt="${project.title} preview image"
+      src="${imgLink}"
+      alt="${title} preview image"
       class="card__img"
       loading="lazy"
     />
 
     <div class="card__body">
       <div class="card__skills">
-        ${skillContainer.join(" ")}
+        ${skillsContainer.join("")}
       </div>
       <div class="card__text">
-        <a href="${project.projLink}" target="_blank" class="card__title">${
-    project.title
-  }</a>
+        <a href="${projLink}" target="_blank" class="card__title">${title}</a>
       </div>
       <div class="card__links">
-        <a href="${
-          project.projLink
-        }" target="_blank" class="btn btn--full">View Project</a>
-        <a href="${
-          project.codeLink
-        }" target="_blank" class="btn btn--icon" aria-label="Link for code">
+        <a href="${projLink}" target="_blank" class="btn btn--full">View Project</a>
+        <a href="${codeLink}" target="_blank" class="btn btn--icon" aria-label="Link for code">
           <ion-icon name="code-slash-outline"></ion-icon>
         </a>
       </div>
     </div>
   </div>
     `;
-  containerProject.insertAdjacentHTML("afterbegin", html);
-});
-
+    containerProject.insertAdjacentHTML("afterbegin", html);
+  });
+};
+displayProjects();
 // Setting year
 const currentYear = new Date().getFullYear();
 year.textContent = currentYear;

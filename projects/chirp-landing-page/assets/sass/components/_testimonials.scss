@@ -1,0 +1,47 @@
+.testimonial {
+  padding: 2.5rem;
+  background-color: $clr-white;
+  border-radius: 6px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.6rem;
+  }
+
+  &__img {
+    height: 6.4rem;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__user-name {
+    font-size: 1.4rem;
+    color: $clr-grey;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: $clr-grey;
+    margin-top: 2.4rem;
+  }
+
+  &__stats {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}

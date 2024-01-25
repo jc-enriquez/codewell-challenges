@@ -1,0 +1,27 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+}
+
+.heading-primary {
+  font-size: 5.6rem;
+}
+
+.heading-secondary {
+  font-size: 3.6rem;
+}
+
+.paragraph {
+  color: $clr-grey;
+  line-height: 1.6;
+}
+
+.strong {
+  &--blue {
+    color: $clr-blue-green;
+  }
+}

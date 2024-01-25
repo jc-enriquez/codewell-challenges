@@ -1,0 +1,47 @@
+.hero {
+  padding: 2rem 0;
+  background-color: $clr-light-yellow;
+
+  &__text-box {
+    padding-top: 8.4rem;
+  }
+
+  &__ctas {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3.2rem;
+  }
+
+  &__users {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.6rem;
+
+    &__img {
+      &:not(:first-child) {
+        margin-left: -2rem;
+      }
+    }
+  }
+
+  &__img-box {
+    justify-self: end;
+  }
+
+  &__image {
+    height: 85%;
+  }
+}
+
+.features {
+  padding: 8.4rem 0 6rem;
+}
+
+.testimonials {
+  padding: 6rem 0;
+  background-color: $clr-blue-light;
+}
+
+.pricing {
+  padding: 6rem 0;
+}

@@ -16,12 +16,9 @@
   max-width: 80rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  border-radius: 10px;
-  overflow: hidden;
 
   @media screen and (max-width: $bp-tablet) {
     grid-template-columns: 1fr;
-    border-radius: 0 0 10px 10px;
     max-width: 40rem;
   }
 
@@ -38,6 +35,11 @@
     background-color: $primary;
     text-align: center;
     padding: 4rem 6rem 0 6rem;
+    border-radius: 10px 0 0 10px;
+
+    @media screen and (max-width: $bp-tablet) {
+      border-radius: 0;
+    }
   }
 }
 

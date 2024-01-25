@@ -1,6 +1,18 @@
 .form {
   background-color: $white;
   padding: 4rem 6rem;
+  box-shadow: 0 0 0 1px inset rgba($gray, 0.5);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+
+  @media screen and (max-width: $bp-tablet) {
+    border-radius: 0 0 10px 10px;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    border-radius: 0;
+  }
 
   &__input-group {
     &--inline {

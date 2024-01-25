@@ -4,11 +4,30 @@
   &--2-cols {
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
+
+    @media screen and (max-width: $bp-tablet) {
+      grid-template-columns: 1fr;
+    }
+
+    &--centered {
+      @media screen and (max-width: $bp-large) {
+        align-items: center;
+      }
+    }
   }
 
   &--3-cols {
     grid-template-columns: repeat(3, 1fr);
     align-items: start;
     gap: 2.4rem;
+
+    @media screen and (max-width: $bp-tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: stretch;
+    }
+
+    @media screen and (max-width: $bp-medium) {
+      grid-template-columns: 1fr;
+    }
   }
 }

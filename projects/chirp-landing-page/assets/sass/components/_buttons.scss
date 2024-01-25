@@ -31,4 +31,16 @@
       box-shadow: 0 0 0 2px inset $clr-blue-green;
     }
   }
+
+  &--mobile {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    display: none;
+
+    @media screen and (max-width: $bp-medium) {
+      display: block;
+    }
+  }
 }

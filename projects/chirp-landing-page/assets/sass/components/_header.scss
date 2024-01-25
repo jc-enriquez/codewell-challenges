@@ -1,5 +1,7 @@
 .header {
+  padding: 0 2rem;
   background-color: $clr-light-yellow;
+  position: relative;
 
   &__content {
     display: flex;

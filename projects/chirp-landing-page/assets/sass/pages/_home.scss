@@ -1,9 +1,17 @@
 .hero {
-  padding: 2rem 0;
+  padding: 2rem 2rem 4rem 2rem;
   background-color: $clr-light-yellow;
 
   &__text-box {
     padding-top: 8.4rem;
+
+    @media screen and (max-width: $bp-large) {
+      padding-top: 0;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      order: 2;
+    }
   }
 
   &__ctas {
@@ -26,22 +34,34 @@
 
   &__img-box {
     justify-self: end;
+
+    @media screen and (max-width: $bp-tablet) {
+      order: 1;
+    }
   }
 
   &__image {
     height: 85%;
+
+    @media screen and (max-width: $bp-tablet) {
+      height: 100%;
+    }
   }
 }
 
 .features {
-  padding: 8.4rem 0 6rem;
+  padding: 8.4rem 2rem 6rem 2rem;
+
+  @media screen and (max-width: $bp-tablet) {
+    padding: 6.4rem 2rem;
+  }
 }
 
 .testimonials {
-  padding: 6rem 0;
+  padding: 6rem 2rem;
   background-color: $clr-blue-light;
 }
 
 .pricing {
-  padding: 6rem 0;
+  padding: 6rem 2rem;
 }

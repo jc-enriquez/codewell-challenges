@@ -1,5 +1,11 @@
 "use strict";
 
+const html = document.querySelector("html");
+const body = document.querySelector("body");
+
+const btnMobile = document.querySelector(".btn--mobile");
+const navigationEl = document.querySelector(".navigation");
+
 const containerHeroUsers = document.querySelector(".hero__users");
 const containerFeatures = document.querySelector(".features__content");
 const containerTestimonials = document.querySelector(".testimonials__content");
@@ -57,6 +63,12 @@ const testimonials = [
     numberImg: 8,
   },
 ];
+
+btnMobile.addEventListener("click", function () {
+  navigationEl.classList.toggle("navigation__open");
+  html.classList.toggle("u-overflow-y-hidden");
+  body.classList.toggle("u-overflow-y-hidden");
+});
 
 const displayHeroUsers = () => {
   for (let i = 1; i <= 9; i++) {

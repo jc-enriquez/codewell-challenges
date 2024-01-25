@@ -28,6 +28,11 @@ body {
   color: $clr-grey;
   line-height: 1.6;
   width: 75%;
+
+  &--pricing {
+    max-width: 35%;
+    margin: 0 auto;
+  }
 }
 
 .label {

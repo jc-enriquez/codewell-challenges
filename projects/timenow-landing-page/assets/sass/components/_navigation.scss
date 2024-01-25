@@ -9,20 +9,20 @@
   &__link {
     &:link,
     &:visited {
-      color: $clr-grey;
-      text-decoration: none;
-      padding-bottom: 0.5rem;
-      background-image: linear-gradient(to right, $clr-cyan, $clr-cyan);
-      background-repeat: no-repeat;
-      background-size: 0 0;
-      background-position: bottom center;
-      transition: all 0.3s ease;
+      @include navigationLinkBase;
     }
 
     &:hover,
     &:active {
-      color: $clr-cyan;
-      background-size: 50% 2px;
+      @include navigationLinkHover;
+    }
+
+    &--active {
+      &:link,
+      &:visited {
+        font-weight: 600;
+        color: $clr-dark-blue;
+      }
     }
   }
 }

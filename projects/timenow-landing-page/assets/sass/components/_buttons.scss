@@ -28,4 +28,39 @@
       background-color: $clr-dark-blue;
     }
   }
+
+  &--submit {
+    font-weight: 600;
+    font-size: inherit;
+    color: $clr-white;
+    background-color: $clr-dark-blue;
+    padding: 1.5rem 2rem;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+
+    &:hover {
+      background-color: lighten($clr-dark-blue, 10%);
+      transition: background-color 0.3s ease;
+    }
+  }
+
+  &--toggle {
+    height: 3rem;
+    width: 5rem;
+    border: none;
+    border-radius: 100px;
+    background-color: $clr-dark-blue;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 2rem;
+      width: 2rem;
+      background-color: $clr-white;
+      border-radius: 50%;
+      transform: translateX(0.5rem);
+    }
+  }
 }

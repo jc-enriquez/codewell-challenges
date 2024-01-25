@@ -23,13 +23,29 @@ body {
   font-size: 5.2rem;
   color: #1d1b67; }
 
+.heading-secondary {
+  font-size: 3.6rem; }
+  .heading-secondary--dark {
+    color: #1d1b67; }
+  .heading-secondary--light {
+    color: #005661; }
+
 .paragraph {
   color: #425466;
-  line-height: 1.6; }
+  line-height: 1.6;
+  width: 75%; }
+
+.label {
+  display: block;
+  font-weight: 700;
+  color: #3b60bf; }
 
 .u-container {
   max-width: 120rem;
   margin: 0 auto; }
+
+.u-margin-bottom-xs {
+  margin-bottom: 0.6; }
 
 .u-margin-bottom-sm {
   margin-bottom: 1.2rem; }
@@ -38,14 +54,27 @@ body {
   display: inline-block;
   font-weight: 600;
   text-decoration: none;
-  color: #fff;
-  background-color: #1d1b67;
   padding: 1.5rem 2rem;
   border-radius: 4px;
+  color: #fff;
+  background-color: #1d1b67;
   transition: background-color 0.3s ease; }
 
 .btn--solid:hover, .btn--solid:active {
   background-color: #28268f; }
+
+.btn--link:link, .btn--link:visited {
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 1.5rem 2rem;
+  border-radius: 4px;
+  color: #425466;
+  transition: all 0.3s ease; }
+
+.btn--link:hover, .btn--link:active {
+  color: #fff;
+  background-color: #1d1b67; }
 
 .header {
   padding: 4rem 2rem;
@@ -73,9 +102,10 @@ body {
   background-repeat: no-repeat;
   background-size: 0 0;
   background-position: bottom center;
-  transition: background-size 0.3s ease; }
+  transition: all 0.3s ease; }
 
 .navigation__link:hover, .navigation__link:active {
+  color: #46ccde;
   background-size: 50% 2px; }
 
 .grid {
@@ -87,5 +117,41 @@ body {
       align-items: center; }
 
 .hero {
-  padding: 4rem 2rem;
+  padding: 4rem 2rem 16rem 2rem;
   background-image: linear-gradient(to right, #fff 50%, #46ccde 50%); }
+  .hero__ctas {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2.4rem; }
+  .hero__message {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem; }
+  .hero__link:link, .hero__link:visited {
+    font-weight: 600;
+    color: #425466;
+    text-underline-offset: 0.4rem;
+    transition: color 0.3s ease; }
+  .hero__link:hover, .hero__link:active {
+    color: #46ccde; }
+
+.influential {
+  padding: 8.4rem 2rem; }
+  .influential__content-box, .influential__text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem; }
+  .influential__users {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap; }
+  .influential__img {
+    height: 4rem;
+    transition: transform 0.3s ease; }
+    .influential__img:hover {
+      transform: rotate(25deg) scale(1.2); }
+
+.features {
+  padding: 8.4rem 2rem;
+  background-color: #cdf9ff; }

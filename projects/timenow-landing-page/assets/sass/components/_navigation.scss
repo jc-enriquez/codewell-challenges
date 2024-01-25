@@ -16,11 +16,12 @@
       background-repeat: no-repeat;
       background-size: 0 0;
       background-position: bottom center;
-      transition: background-size 0.3s ease;
+      transition: all 0.3s ease;
     }
 
     &:hover,
     &:active {
+      color: $clr-cyan;
       background-size: 50% 2px;
     }
   }

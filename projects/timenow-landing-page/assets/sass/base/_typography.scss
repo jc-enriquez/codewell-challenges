@@ -12,7 +12,26 @@ body {
   color: $clr-dark-blue;
 }
 
+.heading-secondary {
+  font-size: 3.6rem;
+
+  &--dark {
+    color: $clr-dark-blue;
+  }
+
+  &--light {
+    color: $clr-teal;
+  }
+}
+
 .paragraph {
   color: $clr-grey;
   line-height: 1.6;
+  width: 75%;
+}
+
+.label {
+  display: block;
+  font-weight: 700;
+  color: $clr-dark-blue-100;
 }

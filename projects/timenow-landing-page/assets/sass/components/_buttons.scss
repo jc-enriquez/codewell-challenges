@@ -2,19 +2,30 @@
   &--solid {
     &:link,
     &:visited {
-      display: inline-block;
-      font-weight: 600;
-      text-decoration: none;
+      @include linkReset;
       color: $clr-white;
       background-color: $clr-dark-blue;
-      padding: 1.5rem 2rem;
-      border-radius: 4px;
       transition: background-color 0.3s ease;
     }
 
     &:hover,
     &:active {
       background-color: lighten($clr-dark-blue, 10%);
+    }
+  }
+
+  &--link {
+    &:link,
+    &:visited {
+      @include linkReset;
+      color: $clr-grey;
+      transition: all 0.3s ease;
+    }
+
+    &:hover,
+    &:active {
+      color: $clr-white;
+      background-color: $clr-dark-blue;
     }
   }
 }

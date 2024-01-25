@@ -1,4 +1,63 @@
 .hero {
-  padding: 4rem 2rem;
+  padding: 4rem 2rem 16rem 2rem;
   background-image: linear-gradient(to right, $clr-white 50%, $clr-cyan 50%);
+
+  &__ctas {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2.4rem;
+  }
+
+  &__message {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      font-weight: 600;
+      color: $clr-grey;
+      text-underline-offset: 0.4rem;
+      transition: color 0.3s ease;
+    }
+
+    &:hover,
+    &:active {
+      color: $clr-cyan;
+    }
+  }
+}
+
+.influential {
+  padding: 8.4rem 2rem;
+
+  &__content-box,
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+
+  &__users {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  &__img {
+    height: 4rem;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: rotate(25deg) scale(1.2);
+    }
+  }
+}
+
+.features {
+  padding: 8.4rem 2rem;
+  background-color: $clr-light-blue;
 }

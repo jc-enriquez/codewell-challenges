@@ -1,0 +1,12 @@
+.grid {
+  display: grid;
+
+  &--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8.4rem;
+
+    &--centered {
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.navigation {
+  &__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $clr-grey;
+      text-decoration: none;
+      padding-bottom: 0.5rem;
+      background-image: linear-gradient(to right, $clr-cyan, $clr-cyan);
+      background-repeat: no-repeat;
+      background-size: 0 0;
+      background-position: bottom center;
+      transition: background-size 0.3s ease;
+    }
+
+    &:hover,
+    &:active {
+      background-size: 50% 2px;
+    }
+  }
+}

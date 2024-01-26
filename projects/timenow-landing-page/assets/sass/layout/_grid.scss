@@ -5,8 +5,35 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 8.4rem;
 
-    &--centered {
+    &--hero {
       align-items: center;
+
+      @media screen and (max-width: $bp-tablet) {
+        grid-template-columns: 1fr;
+        gap: 3.2rem;
+      }
+    }
+
+    &--section {
+      @media screen and (max-width: $bp-large) {
+        grid-template-columns: 1fr;
+        gap: 3.2rem;
+      }
+    }
+  }
+
+  &--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.6rem;
+    align-items: start;
+
+    @media screen and (max-width: $bp-large) {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: stretch;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      grid-template-columns: 1fr;
     }
   }
 }

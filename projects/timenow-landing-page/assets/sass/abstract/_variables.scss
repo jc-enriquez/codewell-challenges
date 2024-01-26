@@ -1,4 +1,5 @@
 // COLORS
+$clr-blue: #3a84f7;
 $clr-dark-blue: #1d1b67;
 $clr-dark-blue-100: #3b60bf;
 $clr-cyan: #46ccde;
@@ -7,4 +8,10 @@ $clr-teal: #005661;
 
 $clr-white: #fff;
 $clr-grey: #425466;
+$clr-grey-light: #cdcdcd;
 $clr-black: #000;
+
+// BREAKPOINTS
+$bp-large: 56.25em; // 900px
+$bp-tablet: 43.75em; // 700px
+$bp-medium: 31.25em; // 500px

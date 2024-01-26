@@ -3,6 +3,10 @@
 
   &--home {
     background-image: linear-gradient(to right, $clr-white 50%, $clr-cyan 50%);
+
+    @media screen and (max-width: $bp-tablet) {
+      background-image: linear-gradient(to right, $clr-white, $clr-white);
+    }
   }
 
   &__branding {

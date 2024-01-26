@@ -1,0 +1,42 @@
+.pricing {
+  color: $clr-grey;
+
+  &__card {
+    text-align: left;
+    padding: 2rem;
+    border: 1px solid $clr-grey-light;
+    border-radius: 6px;
+  }
+
+  &__price {
+    font-size: 1.8rem;
+    color: $clr-grey-light;
+    margin-bottom: 1.6rem;
+  }
+
+  &__value {
+    font-weight: 600;
+    font-size: 3.2rem;
+    color: $clr-black;
+  }
+
+  &__description {
+    margin-bottom: 2.4rem;
+    padding-bottom: 1.6rem;
+    border-bottom: 1px solid $clr-grey-light;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-bottom: 3rem;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+  }
+}

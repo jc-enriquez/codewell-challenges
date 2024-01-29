@@ -1,11 +1,11 @@
 html {
   font-size: 62.5%;
 
-  @media only screen and (max-width: $bp-large) {
+  @media only screen and (max-width: $bp-medium) {
     font-size: 56.25%;
   }
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-small) {
     font-size: 50%;
   }
 }
@@ -47,5 +47,9 @@ body {
 
   &--dark {
     color: $brown;
+  }
+
+  &--gray {
+    color: $off-white;
   }
 }

@@ -26,9 +26,8 @@
     <header class="header">
       <div class="u-container">
         <div class="navigation">
-          <div class="navigation__brand-box">
-            <a href="index.html" class="navigation__brand">spense.</a>
-          </div>
+          <a href="index.html" class="navigation__brand">spense.</a>
+
           <nav class="navigation__main">
             <ul class="navigation__list">
               <li class="navigation__item">
@@ -52,8 +51,8 @@
     <main>
       <section class="section-hero">
         <div class="u-container">
-          <div class="section-hero__container">
-            <div class="text-box text-box--hero">
+          <div class="grid grid--2-cols">
+            <div class="text-box u-order-2">
               <h1 class="heading heading--primary u-margin-bottom-sm">
                 Share your unfiltered thoughts. Get paid.
               </h1>
@@ -90,23 +89,34 @@
                   type="email"
                   placeholder="john@example.com"
                   class="form__input"
+                  required
                 />
                 <button class="btn btn--solid">Get Started</button>
               </form>
             </div>
-            <div class="img-box img-box--hero">
-              <img
-                src="assets/images/hero-image-desktop.png"
-                alt="Woman using laptop"
-                class="img-box__img"
-              />
+            <div class="img-box u-order-1">
+              <picture>
+                <source
+                  srcset="assets/images/hero-image-desktop.png"
+                  media="(min-width: 900px)"
+                />
+                <source
+                  srcset="assets/images/hero-image-tablet.png"
+                  media="(min-width: 400px)"
+                />
+                <img
+                  src="assets/images/hero-image-mobile.png"
+                  alt="Woman using laptop"
+                  class="img-box__img img-box__img--hero"
+                />
+              </picture>
             </div>
           </div>
         </div>
       </section>
       <section class="section-partners">
         <div class="u-container">
-          <div class="section-partners__images">
+          <div class="grid grid--8-cols">
             <img
               src="assets/images/facebook-logo.png"
               alt="Facebook logo"
@@ -153,7 +163,7 @@
 
       <section class="section-secure">
         <div class="u-container">
-          <div class="section-secure__container">
+          <div class="section-secure__content grid grid--2-cols">
             <div class="text-box">
               <h2 class="heading heading--secondary u-margin-bottom-xs">
                 Secure your money with Escrow.
@@ -168,11 +178,21 @@
               >
             </div>
             <div class="img-box">
-              <img
-                src="assets/images/phone-mockup-desktop.png"
-                alt="Phone mockup "
-                class="img-box__img"
-              />
+              <picture>
+                <source
+                  srcset="assets/images/phone-mockup-desktop.png"
+                  media="(min-width: 900px)"
+                />
+                <source
+                  srcset="assets/images/phone-mockup-tablet.png"
+                  media="(min-width: 400px)"
+                />
+                <img
+                  src="assets/images/phone-mockup-mobile.png"
+                  alt="Woman using laptop"
+                  class="img-box__img img-box__img--scaled"
+                />
+              </picture>
             </div>
           </div>
         </div>
@@ -180,15 +200,15 @@
 
       <section class="section-editor">
         <div class="u-container">
-          <div class="section-editor__container">
-            <div class="img-box img-box--editor">
+          <div class="grid grid--2-cols">
+            <div class="img-box u-order-2">
               <img
                 src="assets/images/text-editor.png"
                 alt="Text editor"
                 class="img-box__img"
               />
             </div>
-            <div class="text-box text-box--editor">
+            <div class="text-box u-order-1">
               <h2 class="heading heading--secondary u-margin-bottom-xs">
                 A text editor like no other.
               </h2>
@@ -207,16 +227,15 @@
     <footer class="footer">
       <div class="u-container">
         <div class="footer__container">
-          <!-- First -->
           <div class="footer__brand-box">
             <a href="index.html" class="footer__brand">spense.</a>
-            <p class="paragraph paragraph--light">
+            <p class="paragraph paragraph--gray">
               Spense is an open platform for individuals to share their
               unfiltered thoughts. Discuss the topics you love, and get paid for
               doing <em>just</em> that.
             </p>
           </div>
-          <!-- Second -->
+
           <nav class="footer__nav">
             <ul class="footer__nav-list">
               <li class="footer__nav-item footer__nav-item--header">Sitemap</li>

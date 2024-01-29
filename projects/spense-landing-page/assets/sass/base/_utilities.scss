@@ -19,3 +19,15 @@
 .u-margin-bottom-lg {
   margin-bottom: 3.2rem;
 }
+
+.u-order-1 {
+  @media screen and (max-width: $bp-large) {
+    order: 1;
+  }
+}
+
+.u-order-2 {
+  @media screen and (max-width: $bp-large) {
+    order: 2;
+  }
+}

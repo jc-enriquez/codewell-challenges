@@ -14,10 +14,10 @@ img {
 
 html {
   font-size: 62.5%; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 43.75em) {
     html {
       font-size: 56.25%; } }
-  @media only screen and (max-width: 43.75em) {
+  @media only screen and (max-width: 31.25em) {
     html {
       font-size: 50%; } }
 
@@ -46,6 +46,8 @@ body {
       text-decoration: underline; }
   .paragraph--dark {
     color: #5a5444; }
+  .paragraph--gray {
+    color: #e0e0df; }
 
 .u-container {
   max-width: 130rem;
@@ -63,6 +65,14 @@ body {
 
 .u-margin-bottom-lg {
   margin-bottom: 3.2rem; }
+
+@media screen and (max-width: 56.25em) {
+  .u-order-1 {
+    order: 1; } }
+
+@media screen and (max-width: 56.25em) {
+  .u-order-2 {
+    order: 2; } }
 
 .top-banner {
   font-weight: 500;
@@ -104,7 +114,8 @@ body {
   padding: 1rem 1.5rem;
   border-radius: 4px;
   transition: all 0.3s;
-  border: none; }
+  border: none;
+  cursor: pointer; }
   .btn--solid {
     font-family: inherit;
     font-size: inherit;
@@ -126,6 +137,13 @@ body {
 .footer {
   padding: 4.8rem 0;
   background-color: #000; }
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 3.2rem;
+    flex-wrap: wrap; }
+  .footer__brand-box {
+    flex: 0 0 30%; }
   .footer__brand:link, .footer__brand:visited {
     color: #fff;
     text-decoration: none;
@@ -136,11 +154,6 @@ body {
     margin-bottom: 1.2rem; }
   .footer__brand:hover, .footer__brand:active {
     color: #e6e6e6; }
-  .footer__container {
-    display: flex;
-    flex: 2;
-    justify-content: space-between;
-    gap: 3.2rem; }
   .footer__nav-list {
     list-style: none;
     display: flex;
@@ -150,7 +163,7 @@ body {
     font-weight: 700;
     color: #fff; }
   .footer__nav-link:link, .footer__nav-link:visited {
-    color: #f0eeeb;
+    color: #e0e0df;
     text-decoration: none;
     padding-bottom: 0.5rem;
     border-bottom: 1px solid transparent; }
@@ -163,7 +176,6 @@ body {
 .navigation {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 4rem 0 2rem 0; }
   .navigation__brand:link, .navigation__brand:visited {
     font-size: 2rem;
@@ -186,20 +198,24 @@ body {
     border-bottom: 2px solid currentColor; }
   .navigation__cta {
     display: flex;
-    gap: 1rem; }
+    gap: 1rem;
+    margin-left: auto; }
+
+.grid {
+  display: grid;
+  gap: 3.6rem;
+  align-items: center; }
+  .grid--2-cols {
+    grid-template-columns: repeat(2, 1fr); }
+    @media screen and (max-width: 56.25em) {
+      .grid--2-cols {
+        grid-template-columns: 1fr; } }
+  .grid--8-cols {
+    grid-template-columns: repeat(8, 1fr); }
 
 .section-hero {
   background-color: #f0eeeb;
   padding: 2rem 0 4rem 0; }
-  .section-hero__container {
-    display: grid;
-    grid-template-columns: minmax(30rem, 60rem) minmax(30rem, 50rem);
-    align-items: center;
-    justify-content: space-between; }
-    @media only screen and (max-width: 56.25em) {
-      .section-hero__container {
-        grid-template-columns: 1fr;
-        gap: 4.8rem; } }
   .section-hero__list {
     font-weight: 600;
     color: #5a5444;
@@ -214,51 +230,19 @@ body {
 
 .section-partners {
   padding: 4rem 0; }
-  .section-partners__images {
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    gap: 2.4rem; }
-  .section-partners__img {
-    width: 100%;
-    height: auto; }
 
-.section-secure__container {
-  display: grid;
-  grid-template-columns: minmax(30rem, 40rem) minmax(30rem, 80rem);
-  align-items: center;
+.section-secure__content {
   padding: 4rem 4rem 0 8rem;
   background-color: #f0eeeb;
   border-radius: 8px; }
-  @media only screen and (max-width: 56.25em) {
-    .section-secure__container {
-      grid-template-columns: 1fr; } }
 
 .section-editor {
   padding: 6rem 0; }
-  .section-editor__container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center; }
-    @media only screen and (max-width: 56.25em) {
-      .section-editor__container {
-        grid-template-columns: 1fr; } }
-
-@media only screen and (max-width: 56.25em) {
-  .text-box--hero {
-    order: 2; } }
-
-@media only screen and (max-width: 56.25em) {
-  .text-box--editor {
-    order: 1; } }
 
 .img-box__img {
-  display: block;
-  width: 100%; }
-
-@media only screen and (max-width: 56.25em) {
-  .img-box--hero {
-    order: 1; } }
-
-@media only screen and (max-width: 56.25em) {
-  .img-box--editor {
-    order: 2; } }
+  display: block; }
+  .img-box__img--hero {
+    width: 80%; }
+    @media screen and (max-width: 56.25em) {
+      .img-box__img--hero {
+        width: 100%; } }

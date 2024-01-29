@@ -1,0 +1,17 @@
+.grid {
+  display: grid;
+  gap: 3.6rem;
+  align-items: center;
+
+  &--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+
+    @media screen and (max-width: $bp-large) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &--8-cols {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}

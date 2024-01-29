@@ -1,7 +1,6 @@
 .navigation {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 4rem 0 2rem 0;
 
   &__brand {
@@ -42,5 +41,6 @@
   &__cta {
     display: flex;
     gap: 1rem;
+    margin-left: auto;
   }
 }

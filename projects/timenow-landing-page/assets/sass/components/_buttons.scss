@@ -29,6 +29,23 @@
     }
   }
 
+  &--mobile {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+
+    @media screen and (max-width: $bp-mobile) {
+      display: block;
+      position: fixed;
+      right: 1rem;
+      background-color: $clr-white;
+      padding: 1rem;
+      border-radius: 50%;
+    }
+  }
+
   &--submit {
     font-weight: 600;
     font-size: inherit;

@@ -21,14 +21,15 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Codewell &mdash; TimeNow Landing Page</title>
   </head>
-  <body class="home">
+  <body class="home-page">
     <header class="header header--home">
       <div class="u-container">
         <div class="header__content">
-          <div class="header__branding">
-            <a href="index.html">
-              <img src="assets/images/logo.svg" alt="Timenow logo" />
-            </a>
+          <a href="index.html" class="header__brand">
+            <img src="assets/images/logo.svg" alt="Timenow logo" />
+          </a>
+
+          <div class="header__links">
             <nav class="navigation">
               <ul class="navigation__list">
                 <li class="navigation__item">
@@ -39,10 +40,14 @@
                 </li>
               </ul>
             </nav>
+            <div class="header__cta">
+              <a href="#" class="btn btn--solid">Start Scheduling</a>
+            </div>
           </div>
-          <div class="header__cta">
-            <a href="#" class="btn btn--solid">Start Scheduling</a>
-          </div>
+
+          <button class="btn--mobile">
+            <img src="assets/images/hamburger-icon.svg" alt="Hamburger Icon" />
+          </button>
         </div>
       </div>
     </header>

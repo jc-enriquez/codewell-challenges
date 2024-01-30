@@ -4,6 +4,11 @@
     display: flex;
     align-items: center;
     gap: 2.4rem;
+
+    @media screen and (max-width: $bp-mobile) {
+      flex-direction: column;
+      gap: 1.6rem;
+    }
   }
 
   &__link {

@@ -4,6 +4,9 @@ const body = document.querySelector("body");
 const containerInfluentialUsers = document.querySelector(".influential__users");
 const containerPricingCards = document.querySelector(".pricing__container");
 
+const headerContent = document.querySelector(".header__content");
+const btnMobile = document.querySelector(".btn--mobile");
+
 const pricing = [
   {
     priceMonthly: 4,
@@ -33,6 +36,10 @@ const pricing = [
     benefits: ["LinkedIn Integration", "Twitter Integration"],
   },
 ];
+
+btnMobile.addEventListener("click", function () {
+  headerContent.classList.toggle("active");
+});
 
 const displayInfluentialUsers = () => {
   for (let i = 1; i <= 8; i++) {
@@ -70,6 +77,6 @@ const displayPrices = () => {
   });
 };
 
-if (body.classList.contains("pricing")) displayPrices();
+if (body.classList.contains("pricing-page")) displayPrices();
 
-if (body.classList.contains("home")) displayInfluentialUsers();
+if (body.classList.contains("home-page")) displayInfluentialUsers();

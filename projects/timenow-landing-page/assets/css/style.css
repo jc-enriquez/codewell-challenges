@@ -5,8 +5,12 @@
   padding: 0;
   box-sizing: inherit; }
 
+html {
+  overflow-x: hidden; }
+
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden; }
 
 img {
   max-width: 100%;
@@ -43,9 +47,6 @@ body {
   color: #425466;
   line-height: 1.6;
   width: 75%; }
-  .paragraph--pricing {
-    max-width: 35%;
-    margin: 0 auto; }
 
 .label {
   display: block;
@@ -99,6 +100,21 @@ body {
 .btn--link:hover, .btn--link:active {
   color: #fff;
   background-color: #1d1b67; }
+
+.btn--mobile {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1; }
+  @media screen and (max-width: 25em) {
+    .btn--mobile {
+      display: block;
+      position: fixed;
+      right: 1rem;
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 50%; } }
 
 .btn--submit {
   font-weight: 600;
@@ -238,20 +254,58 @@ body {
     @media screen and (max-width: 43.75em) {
       .header--home {
         background-image: linear-gradient(to right, #fff, #fff); } }
-  .header__branding {
-    display: flex;
-    align-items: center;
-    gap: 3.2rem; }
   .header__content {
     display: flex;
+    align-items: center; }
+    @media screen and (max-width: 25em) {
+      .header__content {
+        justify-content: space-between; } }
+    .header__content.active .header__links {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+      pointer-events: auto; }
+  .header__brand {
+    flex: 0 0 5%; }
+    @media screen and (max-width: 43.75em) {
+      .header__brand {
+        flex: 0 0 10%; } }
+  .header__links {
+    display: flex;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex: 0 0 95%;
+    transition: all 0.3s; }
+    @media screen and (max-width: 43.75em) {
+      .header__links {
+        flex: 0 0 90%; } }
+    @media screen and (max-width: 25em) {
+      .header__links {
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.8);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.6rem;
+        backdrop-filter: blur(10px);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(100%);
+        pointer-events: none; } }
 
 .navigation__list {
   list-style: none;
   display: flex;
   align-items: center;
   gap: 2.4rem; }
+  @media screen and (max-width: 25em) {
+    .navigation__list {
+      flex-direction: column;
+      gap: 1.6rem; } }
 
 .navigation__link:link, .navigation__link:visited {
   color: #425466;

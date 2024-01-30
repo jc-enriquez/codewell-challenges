@@ -22,6 +22,10 @@ body {
   @media screen and (max-width: $bp-large) {
     font-size: 4.8rem;
   }
+
+  &--black {
+    color: $clr-black;
+  }
 }
 
 .heading-secondary {
@@ -40,10 +44,42 @@ body {
   color: $clr-grey;
   line-height: 1.6;
   width: 75%;
+
+  &--pricing {
+    max-width: 70ch;
+    margin: 0 auto;
+
+    @media screen and (max-width: $bp-medium) {
+      max-width: 100%;
+    }
+  }
 }
 
 .label {
   display: block;
   font-weight: 700;
   color: $clr-dark-blue-100;
+}
+
+.link {
+  &:link,
+  &:visited {
+    font-weight: 600;
+    color: $clr-grey;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  &:hover,
+  &:active {
+    color: $clr-dark-blue-100;
+  }
+
+  &--underlined {
+    &:link,
+    &:visited {
+      text-decoration: underline;
+      text-underline-offset: 0.4rem;
+    }
+  }
 }

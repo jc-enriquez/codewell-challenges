@@ -10,7 +10,7 @@ const btnMobile = document.querySelector(".btn--mobile");
 const pricing = [
   {
     priceMonthly: 4,
-    priceYearly: 48,
+
     description: "Perfect plan if you're just starting out.",
     benefits: [
       "LinkedIn Integration",
@@ -20,7 +20,6 @@ const pricing = [
   },
   {
     priceMonthly: 12,
-    priceYearly: 144,
     description: "Perfect plan if you're a heavy user of social media.",
     benefits: [
       "LinkedIn Integration",
@@ -31,7 +30,6 @@ const pricing = [
   },
   {
     priceMonthly: 7,
-    priceYearly: 84,
     description: "Perfect plan if you're just starting out.",
     benefits: ["LinkedIn Integration", "Twitter Integration"],
   },

@@ -36,21 +36,6 @@
     }
   }
 
-  &__link {
-    &:link,
-    &:visited {
-      font-weight: 600;
-      color: $clr-grey;
-      text-underline-offset: 0.4rem;
-      transition: color 0.3s ease;
-    }
-
-    &:hover,
-    &:active {
-      color: $clr-cyan;
-    }
-  }
-
   &__text-box {
     padding: 0 2rem;
   }

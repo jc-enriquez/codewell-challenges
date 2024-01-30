@@ -5,6 +5,10 @@
     padding: 6rem 2rem 4rem 2rem;
   }
 
+  @media screen and (max-width: $bp-medium) {
+    padding: 4rem 2rem;
+  }
+
   &__logo {
     margin-bottom: 1.6rem;
   }
@@ -23,27 +27,14 @@
 
   &__links {
     display: flex;
-    flex: 0 0 50%;
-
-    @media screen and (max-width: $bp-large) {
-      flex: 0 0 100%;
-    }
-
-    @media screen and (max-width: $bp-medium) {
-      flex: 0 0 50%;
-      flex-wrap: wrap;
-      row-gap: 1.6rem;
-    }
+    flex: 0 0 60%;
+    background-color: green;
   }
 
   &__nav {
-    flex: 0 0 33%;
+    flex: 0 0 30%;
 
     @media screen and (max-width: $bp-large) {
-      flex: 0 0 70%;
-    }
-
-    @media screen and (max-width: $bp-medium) {
       flex: 0 0 100%;
     }
 

@@ -1,0 +1,24 @@
+.project {
+  &__img {
+    width: 100%;
+    margin-bottom: 1.6rem;
+  }
+
+  &__title {
+    &:link,
+    &:visited {
+      font-family: "Prata", serif;
+      font-size: 3rem;
+      text-decoration: none;
+      color: $clr-white;
+      display: inline-block;
+      margin-bottom: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    &:hover,
+    &:active {
+      color: $clr-yellow;
+    }
+  }
+}

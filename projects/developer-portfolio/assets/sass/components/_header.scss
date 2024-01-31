@@ -1,0 +1,23 @@
+.header {
+  padding: 3rem 0;
+
+  &__content {
+    @include flexCentered;
+    justify-content: space-between;
+  }
+
+  &__brand {
+    &:link,
+    &:visited {
+      font-family: "Prata", serif;
+      font-size: 2rem;
+      @include linkReset;
+      transition: color 0.3s ease;
+    }
+
+    &:hover,
+    &:active {
+      color: $clr-white;
+    }
+  }
+}

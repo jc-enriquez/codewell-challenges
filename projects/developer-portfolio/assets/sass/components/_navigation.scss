@@ -1,0 +1,43 @@
+.navigation {
+  @include flexCentered;
+  justify-content: space-between;
+  gap: 2.4rem;
+  flex: 0 0 50%;
+
+  &__list {
+    list-style: none;
+    @include flexCentered;
+    gap: 2.4rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      @include linkReset;
+      position: relative;
+      transition: color 0.3s ease-in;
+    }
+
+    &:hover,
+    &:active {
+      color: $clr-white;
+    }
+
+    &::after {
+      content: "";
+      display: none;
+      position: absolute;
+      left: 50%;
+      bottom: -1rem;
+      transform: translateX(-50%);
+      height: 0.5rem;
+      width: 0.5rem;
+      border-radius: 50%;
+      background-color: $clr-white;
+    }
+
+    &:hover.navigation__link::after {
+      display: block;
+    }
+  }
+}

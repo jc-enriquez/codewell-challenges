@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font: inherit; }
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: #0a0a0b; }
+
+img,
+video,
+svg,
+picture {
+  display: block;
+  max-width: 100%; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  color: #999999; }
+
+.heading {
+  font-family: "Prata", serif; }
+
+.u-container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2rem; }

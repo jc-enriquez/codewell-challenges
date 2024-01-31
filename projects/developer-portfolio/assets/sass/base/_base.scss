@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  background-color: $clr-black;
+}
+
+img,
+video,
+svg,
+picture {
+  display: block;
+  max-width: 100%;
+}

@@ -12,10 +12,15 @@
   color: $clr-black;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   box-sizing: border-box;
   min-height: 100vh;
   background-color: $clr-black;
+  overflow-x: hidden;
 }
 
 img,

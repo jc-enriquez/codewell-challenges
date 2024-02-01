@@ -21,5 +21,19 @@
     align-items: center;
     flex-wrap: wrap;
     padding-top: 7.2rem;
+    row-gap: 3rem;
+
+    &__img {
+      @media screen and (max-width: $bp-large) {
+        flex: 0 0 30%;
+        height: 3rem;
+      }
+
+      @media screen and (max-width: $bp-medium) {
+        flex: 0 0 50%;
+        height: 2.5rem;
+        gap: 1.5rem;
+      }
+    }
   }
 }

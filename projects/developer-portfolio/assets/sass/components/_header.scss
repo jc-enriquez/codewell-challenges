@@ -4,6 +4,18 @@
   &__content {
     @include flexCentered;
     justify-content: space-between;
+
+    &.active .navigation {
+      opacity: 1;
+      pointer-events: auto;
+      visibility: visible;
+      transform: translateX(0);
+    }
+
+    &.active .btn--mobile {
+      position: fixed;
+      right: 2rem;
+    }
   }
 
   &__brand {

@@ -1,0 +1,17 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Archivo", sans-serif;
+  font-size: 1.6rem;
+  color: $clr-black;
+}
+
+.heading {
+  font-weight: 700;
+
+  &--primary {
+    font-size: 4.4rem;
+  }
+}

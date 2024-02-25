@@ -1,0 +1,36 @@
+.banner {
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 1.2rem;
+  color: $clr-white;
+  background-color: $clr-black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+
+  &__link {
+    &:link,
+    &:visited {
+      color: $clr-blue;
+    }
+
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+
+  &__btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  &.hidden {
+    display: none;
+    pointer-events: none;
+  }
+}

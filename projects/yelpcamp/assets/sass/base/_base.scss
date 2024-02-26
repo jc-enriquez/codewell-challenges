@@ -13,10 +13,24 @@ body {
   background-color: $clr-white;
 }
 
+main,
+header,
+footer {
+  padding-inline: 2rem;
+}
+
 img,
 picture,
 svg,
 video {
   display: block;
   max-width: 100%;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  cursor: pointer;
 }

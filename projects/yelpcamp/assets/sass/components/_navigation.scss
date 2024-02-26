@@ -1,0 +1,30 @@
+.navigation {
+  flex-grow: 1;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: $clr-gray;
+      transition: color 0.3s ease;
+    }
+
+    &:hover,
+    &:active {
+      color: $clr-black;
+    }
+
+    &--profile {
+      &:link,
+      &:visited {
+        font-weight: 600;
+      }
+    }
+  }
+}

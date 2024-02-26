@@ -32,13 +32,38 @@
       </button>
     </div>
     <header class="header">
-      <nav class="navigation"></nav>
+      <div class="u-container">
+        <div class="header__content">
+          <a href="">
+            <img
+              src="assets/images/other/Logo.svg"
+              alt="YelpCamp logo"
+              class="header__logo"
+            />
+          </a>
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Home</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link navigation__link--profile"
+                  >johndoe</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <button class="btn--logout">Logout</button>
+        </div>
+      </div>
     </header>
     <main>
       <div class="u-container">
         <form action="#" class="form">
-          <h1 class="heading heading--primary">Add New Campground</h1>
-          <div class="form__group">
+          <h1 class="heading heading--primary u-margin-bottom-lg">
+            Add New Campground
+          </h1>
+          <div class="form__group u-margin-bottom-md">
             <label for="" class="form__label">Campground Name</label>
             <input
               type="text"
@@ -46,11 +71,11 @@
               placeholder="Seven Sisters Waterfall"
             />
           </div>
-          <div class="form__group">
+          <div class="form__group u-margin-bottom-md">
             <label for="" class="form__label">Price</label>
             <input type="text" class="form__input" placeholder="$149" />
           </div>
-          <div class="form__group">
+          <div class="form__group u-margin-bottom-md">
             <label for="" class="form__label">Image</label>
             <input
               type="text"
@@ -58,20 +83,30 @@
               placeholder="www.thepinoytraveler.com/2018/01/mt-ulap-diy-dayhike.html"
             />
           </div>
-          <div class="form__group">
+          <div class="form__group u-margin-bottom-md">
             <label for="" class="form__label">Description</label>
             <textarea
               name=""
               id=""
               cols="30"
-              rows="10"
+              rows="6"
               class="form__input"
+              placeholder="The Seven Sisters is the 39th tallest waterfall in Norway. The 410- metre tall waterfall consists of seven separate streams, and the tallest of the seven has a free fall that measures 250 metres. The waterfall is located along the Geirangerfjorden in Stranda Municipality in More og Romsdal county, Norway."
             ></textarea>
           </div>
+          <button class="btn--solid">Add Campground</button>
         </form>
       </div>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="u-container">
+        <img
+          src="assets/images/other/Logo.svg"
+          alt="YelpCamp logo"
+          class="footer__logo"
+        />
+      </div>
+    </footer>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

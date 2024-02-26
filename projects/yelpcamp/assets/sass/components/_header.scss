@@ -1,0 +1,9 @@
+.header {
+  padding-block: 6.4rem;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+  }
+}

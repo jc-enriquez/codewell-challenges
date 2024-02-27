@@ -24,4 +24,23 @@
       background-color: lighten($clr-black, 10%);
     }
   }
+
+  &--mobile {
+    background: $clr-off-white;
+    border: none;
+    border-radius: 6px;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+    display: none;
+    pointer-events: none;
+
+    @media screen and (max-width: $bp-tablet) {
+      display: block;
+      pointer-events: auto;
+    }
+
+    &:hover {
+      background-color: darken($clr-off-white, 5%);
+    }
+  }
 }

@@ -1,6 +1,12 @@
 .navigation {
   flex-grow: 1;
 
+  &.active .navigation__list {
+    transform: translateX(0);
+    visibility: visible;
+    pointer-events: auto;
+  }
+
   &__list {
     list-style: none;
     display: flex;
@@ -13,10 +19,15 @@
       height: 100vh;
       width: 50vw;
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
       gap: 2.4rem;
-      background-color: red;
-      justify-content: flex-start;
+      background-color: $clr-white;
+      justify-content: center;
+
+      transform: translateX(100%);
+      pointer-events: none;
+      visibility: hidden;
+      transition: transform 0.3s ease;
     }
   }
 

@@ -7,10 +7,15 @@
   font: inherit;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   box-sizing: border-box;
   min-height: 100vh;
   background-color: $clr-white;
+  overflow-x: hidden;
 }
 
 main,

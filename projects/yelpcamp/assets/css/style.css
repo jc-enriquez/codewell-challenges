@@ -97,7 +97,7 @@ body {
   .btn--logout:hover {
     color: #000000; }
 
-.btn--solid {
+.btn--solid, .btn--solid:link, .btn--solid:visited {
   font-weight: 600;
   color: #ffffff;
   background-color: #000000;
@@ -106,8 +106,12 @@ body {
   border-radius: 4px;
   width: 100%;
   transition: background-color 0.3s ease; }
-  .btn--solid:hover {
-    background-color: #1a1a1a; }
+
+.btn--solid:hover {
+  background-color: #1a1a1a; }
+
+.btn--solid--sm {
+  padding: 1.5rem 2rem; }
 
 .btn--mobile {
   background: #f9f6f1;
@@ -164,7 +168,8 @@ body {
   .navigation__list {
     list-style: none;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center; }
     @media screen and (max-width: 46.875em) {
       .navigation__list {
         position: fixed;

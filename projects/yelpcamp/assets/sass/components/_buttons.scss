@@ -10,7 +10,9 @@
     }
   }
 
-  &--solid {
+  &--solid,
+  &--solid:link,
+  &--solid:visited {
     font-weight: 600;
     color: $clr-white;
     background-color: $clr-black;
@@ -19,9 +21,15 @@
     border-radius: 4px;
     width: 100%;
     transition: background-color 0.3s ease;
+  }
 
-    &:hover {
-      background-color: lighten($clr-black, 10%);
+  &--solid:hover {
+    background-color: lighten($clr-black, 10%);
+  }
+
+  &--solid {
+    &--sm {
+      padding: 1.5rem 2rem;
     }
   }
 

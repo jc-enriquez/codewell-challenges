@@ -217,8 +217,7 @@ body {
         gap: 3.6rem; } }
   .footer__links {
     display: flex;
-    flex: 0 0 60%;
-    background-color: green; }
+    flex: 0 0 60%; }
   .footer__nav {
     flex: 0 0 30%; }
     @media screen and (max-width: 56.25em) {
@@ -251,12 +250,17 @@ body {
 
 .form__group {
   padding: 0.5rem;
-  border: 1px solid #425466;
+  box-shadow: 0 0 0 1px #425466;
   border-radius: 6px; }
+  .form__group:has(.form__input:focus) {
+    box-shadow: 0 0 0 1px #3a84f7; }
 
 .form__input {
   font-family: inherit;
-  padding: 0 1rem; }
+  padding: 0 1rem;
+  border: none; }
+  .form__input:focus {
+    outline: none; }
 
 .header {
   padding: 4rem 2rem; }

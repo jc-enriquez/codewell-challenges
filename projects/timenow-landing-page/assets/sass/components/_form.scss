@@ -7,12 +7,21 @@
 
   &__group {
     padding: 0.5rem;
-    border: 1px solid $clr-grey;
+    box-shadow: 0 0 0 1px $clr-grey;
     border-radius: 6px;
+
+    &:has(.form__input:focus) {
+      box-shadow: 0 0 0 1px $clr-blue;
+    }
   }
 
   &__input {
     font-family: inherit;
     padding: 0 1rem;
+    border: none;
+
+    &:focus {
+      outline: none;
+    }
   }
 }
